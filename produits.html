@@ -33,85 +33,92 @@
 <section class="catalogue">
   <div class="trust-bar">
 
-    <div class="trust-bar__title">
-      <img src="assets/icons/Icon.png" alt="">
-      <p>Traçabilité matière 100% vérifiée</p>
-    </div>
-
-    <div class="trust-bar__content">
-      <ul class="trust-bar__list">
-        <li class="trust-bar__item">
-          <p>Chaque objet détourne des déchets nobles des filières d'enfouissement.</p>
-        </li>
-        <li class="trust-bar__item">
-          <img src="assets/icons/Container.png" alt="Livraison ferroviaire et routière">
-          <p>Livraison ferroviaire &amp; routière compensée</p>
-        </li>
-        <li class="trust-bar__item">
-          <p>Emballages 100% amidon de maïs compostable</p>
-        </li>
-      </ul>
-    </div>
-
+  <div class="trust-bar__title">
+    <img src="assets/icons/Icon.png" alt="">
+    <p>Traçabilité matière 100% vérifiée</p>
   </div>
 
-  <div class="hero">
+  <div class="trust-bar__content">
+    <ul class="trust-bar__list">
+      <li class="trust-bar__item trust-bar__item--puce">
+        <p>Chaque objet détourne des déchets nobles des filières d'enfouissement.</p>
+      </li>
+      <li class="trust-bar__item">
+        <img src="assets/icons/Container.png" alt="">
+        <p>Livraison ferroviaire &amp; routière compensée</p>
+      </li>
+      <li class="trust-bar__item trust-bar__item--trait">
+        <p>Emballages 100% amidon de maïs compostable</p>
+      </li>
+    </ul>
+  </div>
 
-    <div class ="hero_titre">
-     <p class ="hero_titre"><ul>FILIÈRE D'ÉCO-CONCEPTION FRANÇAISE</ul></p>
-    </div>
+</div>
+<div class="hero">
 
-    <div class="catalogue_descrption">
-    <h1>Catalogue d'objets</h1>
+  <p class="hero__tag">FILIÈRE D'ÉCO-CONCEPTION FRANÇAISE</p>
+
+  <div class="hero__description">
+    <h1>Catalogue d'objets upcyclés &amp; pièces uniques</h1>
     <p>Des rebuts nobles réinventés en art de vivre durable. Chaque pièce est manufacturée à la main en série très limitée, traçable jusqu'au gisement source.</p>
-    </div>
-
-    <div class="colonne1">
-      <p>MATIÈRE DÉTOURNÉE</p>
-      <p>14.8 t</p>
-      <p>Depuis janvier 2025</p>
-      <p>|</p>
-      <p>ÉMISSIONS ÉVITÉES</p>
-      <p>-32.4 t</p>
-      <p>Équivalent CO₂ eq</p>
-    </div>
-
-    <section class="recherche">
-
-      <div class="recherche__title">
-        <img src="assets/icons/Icon (1).png" alt="Icône de recherche">
-        <input type="text" id="search" placeholder="Rechercher bois, carafe, chêne, lin">
-      </div>
-
-      <div class="recherche__filters">
-        <p>ESPACES:</p>
-        <button class="filter-button">Tous</button>
-        <button class="filter-button">Salon</button>
-        <button class="filter-button">Art de la table</button>
-        <button class="filter-button">Luminaire</button>
-        <button class="filter-button">Décoration</button>
-        <button class="filter-button">Mobilier</button>
-      </div>
-
-      <select class="recherche__sort" id="sort">
-        <option value="default">Trier par défaut</option>
-        <option value="price-asc">Prix croissant</option>
-        <option value="price-desc">Prix décroissant</option>
-        <option value="name-asc">Nom A-Z</option>
-        <option value="name-desc">Nom Z-A</option>
-      </section>
-
-      <div class="matiere">
-          <p>MATIÈRE REVALORISÉE :</p>
-          <li>Toutes les matières</li>
-          <li>Bois revalorisé</li>
-          <li>Tissus & Textiles</li>
-          <li>Verre surcyclé</li>
-          <li>Plastiques techniques</li>
-          <li>8 pièces uniques</li>
-          <li>disponibles</li>
-      </div>
   </div>
+
+  <div class="stats">
+    <div class="stats__col">
+      <p class="stats__label">MATIÈRE DÉTOURNÉE</p>
+      <p class="stats__value">14.8<span>t</span></p>
+      <p class="stats__note">Depuis janvier 2025</p>
+    </div>
+    <div class="stats__col">
+      <p class="stats__label">ÉMISSIONS ÉVITÉES</p>
+      <p class="stats__value">-32.4<span>t</span></p>
+      <p class="stats__note">Équivalent CO₂ eq</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="recherche">
+
+  <div class="recherche__title">
+    <img src="assets/icons/Icon (1).png" alt="">
+    <input type="text" id="search" placeholder="Rechercher bois, carafe, chêne, lin…">
+  </div>
+
+  <div class="recherche__filters">
+    <p>ESPACES :</p>
+    <button class="filter-button is-active">Tous</button>
+    <button class="filter-button">Salon</button>
+    <button class="filter-button">Art de la table</button>
+    <button class="filter-button">Luminaire</button>
+    <button class="filter-button">Décoration</button>
+    <button class="filter-button">Mobilier</button>
+  </div>
+
+  <div class="recherche__sort">
+    <label for="sort">TRIER :</label>
+    <select id="sort">
+      <option value="new">Nouveautés d'atelier</option>
+      <option value="price-asc">Prix croissant</option>
+      <option value="price-desc">Prix décroissant</option>
+      <option value="name-asc">Nom A-Z</option>
+      <option value="name-desc">Nom Z-A</option>
+    </select>
+  </div>
+
+  <div class="matiere">
+    <p>MATIÈRE REVALORISÉE :</p>
+    <ul>
+      <li class="is-active">Toutes les matières</li>
+      <li>Bois revalorisé</li>
+      <li>Tissus &amp; Textiles</li>
+      <li>Verre surcyclé</li>
+      <li>Plastiques techniques</li>
+    </ul>
+    <p class="matiere__count">8 pièces uniques disponibles</p>
+  </div>
+
+</section>  
 </section>
 </body>
 </html>
