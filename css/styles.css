@@ -423,3 +423,145 @@ nav{
     flex-direction: column;
     gap: 16px;
 }
+.atelier-image-img{
+    width: 100%;
+}
+.img-atelier{
+    position: relative;
+}
+.img-para-atelier{
+    color:#FFFFFF ;
+    background-color:#86432D ;
+    width: 90%;
+    border-radius: 2px;
+    padding: 8px 4px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left:4%;
+}
+.p1-at{
+    color: #14422D;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.66;
+}
+.p2-at{
+    color: #414943;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.66px;
+}
+.p3-at{
+    color: #773A28;
+}
+.p1-at-div{
+    display: flex;
+    justify-content: center;
+    padding: 16px 20px;
+}
+.text-atelier2 p{
+    color: #14422D;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+.text-atelier3 p{
+    color: #414943;
+    font-size: 18px;
+    letter-spacing: 0.16px;
+}
+.text-atelier4{
+    background-color:#37583C ;
+    padding:  16px 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color:#F2F7F3 ;
+}
+.text-atelier4 div{
+    display: flex;
+}
+.at5-division-p{
+    color: #14422D;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.26px;
+}
+.at5-division-p2{
+    color: #414943;
+
+}
+.at5-division{
+    display: flex;
+    flex-direction: row;
+}
+.text-atelier5{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.text-atelier5 button{
+    width: 60%;
+    background-color: #773A28;
+    border-radius: 4px;
+    padding: 16px 20px;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#makers{
+    background-color: #2D5A43;
+    padding: 10px 20px 40px 20px;
+}
+.makers{
+    color: #F2FCF4;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -0.26px;
+}
+.etoile-div{
+    display: flex;
+    justify-content: flex-start;
+}
+.etoile-para{
+    color: #151D19;
+    font-size: 18px;
+    letter-spacing: 0.14px;
+}
+.etoile-foot{
+    display: flex;
+}
+.al{
+    color: #9FCFB2;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    background-color:#2D5A43 ;
+    border-radius: 12px;
+    padding: 8px;
+}
+.card-make{
+    background-color: #F2FCF4;
+    border-radius: 8px;
+    padding: 24px 20px;
+}
+.ant-p1{
+    color: #151D19;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.52px;
+}
+.ant-p2{
+    color: #414943;
+    font-size: 16px;
+    font-weight: 600;
+}
+.antoine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
