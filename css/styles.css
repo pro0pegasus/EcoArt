@@ -1,3 +1,9 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #F2FCF4;
+}
 nav{
     background-color: #F2FCF4;
 }
@@ -76,3 +82,8 @@ nav{
     border-top: 1px solid #eee;
 }
 
+.header-section{
+    background-color:#2F5233 ;
+    margin: 0;
+    padding: 20px;
+}
