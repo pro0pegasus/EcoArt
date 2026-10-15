@@ -378,3 +378,48 @@ nav{
     font-size: 24px;
     font-weight: 600;
 }
+.card-second{
+    background-color: #37583C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+.second-card-nombre{
+    color: #2D5A43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D6EBD9;
+    width:88px;
+    height: 42px;
+    border-radius: 4px;
+}
+.second-card-title{
+    color: #E0F5ED;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -0.26px;
+}
+.second-card-paragra{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.foot-card-second{
+    color: #E0F5ED;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.66;
+    display: flex;
+}
+.text-card-second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-cards-second{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
