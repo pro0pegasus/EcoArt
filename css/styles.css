@@ -1,8 +1,30 @@
+
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#FFFFFF ;
+    font-size: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-eco{
+    background-color: #D6EBD9;
+    width: 100%;
+    border-radius: 99px;
+    height: 24px;
+    margin: 40px auto;
+    padding: 8px;
+    
+}
+.div-eco p {
+    width: fit-content;
+    color: #2F5233;
+    font-size: 12px;
+    font-weight: bold;
+    margin:  auto;
 }
 body{
+    width: 100%;
     background-color: #F2FCF4;
+    height: 100vh;
 }
 nav{
     background-color: #F2FCF4;
@@ -24,6 +46,7 @@ nav{
     margin: 0;
     cursor: pointer;
     z-index: 2;
+
 }
 
 .burger {
@@ -69,6 +92,7 @@ nav{
     margin: 0;
     padding: 0;
     list-style: none;
+    background-color: #D6EBD9;
 }
 .toggle:checked ~ .items {
     display: flex;
@@ -85,5 +109,272 @@ nav{
 .header-section{
     background-color:#2F5233 ;
     margin: 0;
+    padding: 40px 20px;
+}
+.img-header{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.h2-head{
+    color: #D6EBD9;
+    font-size: 16px;
+}
+.h3-head{
+    color: #eee;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-h23{
+    position: absolute;
+    width: 200px;
+    top: 35%;
+    left: 4%;
+}
+.header-img{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+#line-span{
+    border: none;
+    height: 1px;
+    background-color: #eee;
+}
+.div-h23 p{
+    color: #E9F3EB;
+}
+.unique{
+    background-color: #eee;
+    border-radius: 2px;
+
+}
+.unique p{
+    font-size: 16px;
+    color: #2F5233;
+    text-align: center;
+    font-weight: bold;
+}
+.div-card-head{
+    background-color: #eee;
+    width: 70%;
+    border-radius: 8px;
+    display: flex;
+    gap:10px ;
+    padding: 12px;
+}
+.icon-fleur{
+    background-color: #D6EBD9;
+    border-radius: 8px;
+    
+}
+.div-card-head  .phead{
+    color: #2F5233;
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-card-head #p-head{
+    color: #414943;
+    font-size: 16px;
+}
+.para-head{
+    font-size: 16px;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:20px ;
+}
+.container-button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button-head button{
+    width: 100%;
+    border-radius: 8px;
     padding: 20px;
+    font-size:18px ;
+}
+.button-head .explorer{
+    color: #1F2A22;
+    background-color: #FFFFFF;
+}
+.button-head .participer{
+    color: #5A2F25;
+    background-color: #F3E4DF;
+}
+.paragraphs-head{
+    display: flex;
+    flex-direction: column;
+}
+.paragraphs-head div{
+    display: flex;
+    gap: 10px;
+}
+.paragraphs-head div{
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 32px;
+}
+.card-info-section{
+    background-color: #2F5233;
+    padding: 20px;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+}
+.card-info div{
+    display: flex;
+}
+.card-info .number{
+    font-size: 38px;
+    font-weight: bold;
+}
+.card-info{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-info .text1{
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.card-info .text2{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.separation{
+    color: #FFFFFF;
+}
+.article-head{
+    padding: 20px;
+}
+.article-head .article-h{
+    font-size: 16px;
+    font-weight: bold;
+    color: #2F5233;
+    letter-spacing: 8%;
+}
+.article-head .article-titre{
+    color: #2F5233;
+    font-size: 36px;
+}
+.article-head .article-p{
+    font-size: 18px;
+    color: #2A3A2D;
+}
+.card1{
+    border-radius:8px ;
+    background-color: #2F5233;
+}
+.card1-texte-head{
+    height: 26px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1-texte{
+    padding: 24px;
+}
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card1-texte-head .filiere{
+    color: #37583C;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.66px;
+    margin: 10px;
+}
+.gisement{
+    color: #EFF0F0;
+    letter-spacing: 0.66px;
+    text-align: center;
+}
+.h3-texte-card{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.26px;
+}
+.para-card{
+    color: #EFF0F0;
+    font-size: 18px;
+    letter-spacing: 0.14px;
+}
+.card-image{
+    width: 100%;
+    height:250px ;
+    border-radius: 0 0 8px 8px;
+}
+.icon-card{
+    width: 12px;
+    height: 12px;
+}
+.bois-container{
+    display: flex;
+    justify-content: space-between;
+}
+.bois{
+    width: 130px;
+    border-radius: 12px;
+    position: absolute;
+}
+.bois p {
+    color: #14422D;
+    font-size: 16px;
+    letter-spacing: 0.66px;
+    background-color: #D6EBD9;
+    height: 32px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-card{
+    position: relative;
+}
+.bois2{
+    margin-top: 10px;
+    right: 0px;
+}
+.bois1{
+    margin-top: 10px;
+    left: 15px;
+}
+.second-cards-text{
+    color: #EFF0F0;
+    font-size: 16px;
+    letter-spacing: 0.66px;
+}
+.price-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.price-card .price-prix{
+    color: #EFF0F0;
+    font-size: 16px;
+    letter-spacing: 0.66px;
+}
+.taman{
+    color: #EFF0F0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.button-price-card{
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 50px;
+    border-radius: 4px;
+    color: #14422D;
+    font-size: 24px;
+    font-weight: 600;
 }
