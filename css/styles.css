@@ -77,6 +77,8 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
+    background-color: #F2FCF4;
+    z-index: 10;
 }
 
 .toggle:checked~.items {
@@ -354,4 +356,19 @@ footer ul {
         gap: 12px 24px;
         padding: 32px 0 40px;
     }
+}
+
+main {
+    background: var(--mint-50);
+    color: var(--green-900);
+    font-family: var(--font-body);
+    padding: 24px 0;
+}
+
+main .container {
+    max-width: 402px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
