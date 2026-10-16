@@ -431,55 +431,6 @@
         height: 220px;
         transform: translateY(-50%);
     }
-
-    /* ---------- FOOTER : 4 colonnes ---------- */
-    .footer{
-        display: block;
-        columns: 4;
-        column-gap: 40px;
-        text-align: left;
-        padding: 40px var(--gutter) 24px;
-    }
-    .footer > *{
-        break-inside: avoid;
-    }
-    .footer-logo{
-        height: 36px;
-        margin-bottom: 12px;
-    }
-    .footer-text{
-        max-width: none;
-        font-size: 12px;
-    }
-    .footer-title{
-        break-before: column;
-        margin: 0 0 12px;
-        font-size: 15px;
-    }
-    .footer-list{
-        font-size: 12px;
-    }
-    .footer-label{
-        width: auto;
-        font-size: 12px;
-    }
-    .newsletter{
-        flex-direction: row;
-        margin-top: 12px;
-    }
-    .newsletter input{
-        flex: 1;
-        min-width: 0;
-    }
-    .newsletter button{
-        padding: 10px 16px;
-    }
-    .footer-small{
-        max-width: none;
-    }
-    .footer-copy{
-        column-span: all;
-    }
 }
 
 /* =========================================================
@@ -644,11 +595,6 @@
         right: 56px;
     }
 
-    /* FOOTER */
-    .footer{
-        column-gap: 56px;
-        padding-top: 48px;
-    }
 }
 
 /* =========================================================
@@ -763,12 +709,4 @@
         font-size: 42px;
     }
 
-    /* FOOTER */
-    .footer{
-        column-gap: 64px;
-    }
-    .footer-text,
-    .footer-list{
-        font-size: 13px;
-    }
 }
