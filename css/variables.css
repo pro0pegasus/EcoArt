@@ -134,147 +134,138 @@
 
 
 
-
-
-/* :root {
-  /* 1. PALETTE BRUTE */
-
-  /* Verts */
+/*
+:root {
+  Verts
   --green-950: #002111;
-  --green-900: #14422D;   /* vert principal de la marque */
+  --green-900: #14422D;
   --green-850: #1D5D40;
   --green-800: #235B3E;
-  --green-720: #335238;   /* vert ateliers / artisans / bandeaux */
+  --green-720: #335238;
   --green-700: #37583C;
   --green-650: #2D5A43;
   --green-550: #3A674F;
   --green-300: #9FCFB2;
-  --green-200: #B5F0CA;   /* accent pastel */
+  --green-200: #B5F0CA;
 
-  /* Terracotta */
+  Terracotta
   --terracotta-950: #3A0A00;
   --terracotta-800: #733826;
-  --terracotta-600: #86432D;  /* CTA principal */
+  --terracotta-600: #86432D;
   --terracotta-500: #944931;
   --terracotta-200: #FD9D80;
-  --terracotta-100: #FFE2D6;  /* fond pêche doux */
+  --terracotta-100: #FFE2D6;
 
-  /* Rouge */
+  Rouge
   --red-500: #BA1A1A;
 
-  /* Neutres */
+  Neutres
   --neutral-900: #151D19;
   --neutral-800: #414943;
   --neutral-600: #717973;
   --neutral-500: #767676;
   --neutral-400: #9CA3AF;
 
-  /* Surfaces claires */
-  --white:       #FFFFFF;
-  --mint-50:     #F2FCF4;
-  --sage-100:    #EDF8F2;
-  --sage-150:    #ECF6EE;
-  --sage-200:    #E9F3EB;
-  --sage-300:    #D7EFE2;
-  --linen:       #E1EBE3;
-  --cream:       #F8EFEC;
+  Surfaces claires
+  --white: #FFFFFF;
+  --mint-50: #F2FCF4;
+  --sage-100: #EDF8F2;
+  --sage-150: #ECF6EE;
+  --sage-200: #E9F3EB;
+  --sage-300: #D7EFE2;
+  --linen: #E1EBE3;
+  --cream: #F8EFEC;
 
+  --bg-page: var(--mint-50);
+  --bg-page-alt: var(--white);
+  --bg-section-light: var(--sage-150);
+  --bg-section-dark: var(--green-900);
+  --bg-section-accent: var(--green-720);
+  --bg-section-warm: var(--terracotta-100);
 
-  --bg-page:            var(--mint-50);        /* fond général des pages */
-  --bg-page-alt:        var(--white);
-  --bg-section-light:   var(--sage-150);       /* sections claires, footer */
-  --bg-section-dark:    var(--green-900);      /* sections très foncées */
-  --bg-section-accent:  var(--green-720);      /* bandeaux, ateliers, artisans */
-  --bg-section-warm:    var(--terracotta-100); /* sections pêche */
+  CARTES
+  --card-bg: var(--white);
+  --card-bg-soft: var(--sage-100);
+  --card-bg-muted: var(--mint-50);
+  --card-bg-dark: var(--green-720);
+  --card-text-on-dark: var(--white);
 
-  /* ---------- CARTES ---------- */
-  --card-bg:            var(--white);
-  --card-bg-soft:       var(--sage-100);
-  --card-bg-muted:      var(--mint-50);
-  --card-bg-dark:       var(--green-720);      /* carte produit sombre */
-  --card-text-on-dark:  var(--white);
+  TEXTE
+  --text-primary: var(--neutral-900);
+  --text-body: var(--neutral-800);
+  --text-muted: var(--neutral-600);
+  --text-inverse: var(--white);
+  --text-brand: var(--green-900);
+  --text-accent: var(--terracotta-600);
+  --text-error: var(--red-500);
 
-  /* ---------- TEXTE ---------- */
-  --text-primary:       var(--neutral-900);    /* titres */
-  --text-body:          var(--neutral-800);    /* texte courant */
-  --text-muted:         var(--neutral-600);    /* labels, texte secondaire */
-  --text-inverse:       var(--white);          /* sur fond sombre */
-  --text-brand:         var(--green-900);
-  --text-accent:        var(--terracotta-600); /* sur-titres (ex: FILIÈRE D'ÉCO-CONCEPTION) */
-  --text-error:         var(--red-500);
-
-  /* ---------- BOUTONS ---------- */
-  /* Primaire (terracotta) */
-  --btn-primary-bg:         var(--terracotta-600);
-  --btn-primary-bg-hover:   var(--terracotta-500);
-  --btn-primary-text:       var(--white);
-
-  /* Secondaire (vert) */
-  --btn-secondary-bg:       var(--green-900);
+  BOUTONS
+  --btn-primary-bg: var(--terracotta-600);
+  --btn-primary-bg-hover: var(--terracotta-500);
+  --btn-primary-text: var(--white);
+  --btn-secondary-bg: var(--green-900);
   --btn-secondary-bg-hover: var(--green-720);
-  --btn-secondary-text:     var(--white);
+  --btn-secondary-text: var(--white);
+  --btn-light-bg: var(--white);
+  --btn-light-text: var(--green-900);
 
-  /* Bouton clair (ex: "Ajouter" sur carte sombre) */
-  --btn-light-bg:           var(--white);
-  --btn-light-text:         var(--green-900);
+  FILTRES / PILLS
+  --filter-bg: var(--sage-200);
+  --filter-text: var(--text-primary);
+  --filter-active-bg: var(--green-900);
+  --filter-active-text: var(--white);
 
-  /* ---------- FILTRES / PILLS ---------- */
-  --filter-bg:              var(--sage-200);
-  --filter-text:            var(--text-primary);
-  --filter-active-bg:       var(--green-900);
-  --filter-active-text:     var(--white);
+  FORMULAIRES
+  --input-bg: var(--white);
+  --input-text: var(--text-primary);
+  --input-placeholder: var(--neutral-600);
+  --input-border: var(--neutral-500);
+  --input-border-focus: var(--green-900);
+  --input-border-error: var(--red-500);
+  --input-search-bg: var(--green-720);
+  --input-search-text: var(--white);
 
-  /* ---------- FORMULAIRES ---------- */
-  --input-bg:               var(--white);
-  --input-text:             var(--text-primary);
-  --input-placeholder:      var(--neutral-600);
-  --input-border:           var(--neutral-500);
-  --input-border-focus:     var(--green-900);
-  --input-border-error:     var(--red-500);
-  --input-search-bg:        var(--green-720);  /* barre de recherche */
-  --input-search-text:      var(--white);
+  BADGES & TAGS
+  --badge-green-bg: var(--sage-300);
+  --badge-green-text: var(--green-900);
+  --badge-warm-bg: var(--terracotta-100);
+  --badge-warm-text: var(--terracotta-950);
+  --badge-dark-bg: var(--green-900);
+  --badge-dark-text: var(--white);
 
-  /* ---------- BADGES & TAGS ---------- */
-  --badge-green-bg:         var(--sage-300);
-  --badge-green-text:       var(--green-900);
-  --badge-warm-bg:          var(--terracotta-100);
-  --badge-warm-text:        var(--terracotta-950);
-  --badge-dark-bg:          var(--green-900);
-  --badge-dark-text:        var(--white);
+  BORDURES & SEPARATEURS
+  --border-subtle: rgba(219, 229, 221, 0.90);
+  --border-light: rgba(192, 201, 193, 0.30);
+  --border-strong: var(--neutral-400);
+  --border-brand: var(--green-900);
 
-  /* ---------- BORDURES & SÉPARATEURS ---------- */
-  --border-subtle:          rgba(219, 229, 221, 0.90);
-  --border-light:           rgba(192, 201, 193, 0.30);
-  --border-strong:          var(--neutral-400);
-  --border-brand:           var(--green-900);
+  ETATS / FEEDBACK
+  --state-success: var(--green-800);
+  --state-success-bg: var(--sage-300);
+  --state-error: var(--red-500);
+  --state-warning-bg: var(--terracotta-100);
 
-  /* ---------- ÉTATS / FEEDBACK ---------- */
-  --state-success:          var(--green-800);
-  --state-success-bg:       var(--sage-300);
-  --state-error:            var(--red-500);
-  --state-warning-bg:       var(--terracotta-100);
+  ICONES
+  --icon-default: var(--green-900);
+  --icon-inverse: var(--white);
+  --icon-accent: var(--terracotta-600);
 
-  /* ---------- ICÔNES ---------- */
-  --icon-default:           var(--green-900);
-  --icon-inverse:           var(--white);
-  --icon-accent:            var(--terracotta-600);
+  OVERLAYS / TRANSPARENCES
+  --overlay-dark: rgba(51, 82, 56, 0.90);
+  --overlay-light: rgba(242, 252, 244, 0.95);
+  --overlay-light-soft: rgba(242, 252, 244, 0.90);
+  --overlay-white: rgba(255, 255, 255, 0.20);
+  --overlay-green: rgba(20, 66, 45, 0.20);
 
-  /* ---------- OVERLAYS / TRANSPARENCES ---------- */
-  --overlay-dark:           rgba(51, 82, 56, 0.90);
-  --overlay-light:          rgba(242, 252, 244, 0.95);
-  --overlay-light-soft:     rgba(242, 252, 244, 0.90);
-  --overlay-white:          rgba(255, 255, 255, 0.20);
-  --overlay-green:          rgba(20, 66, 45, 0.20);
-
-  /* ---------- HEADER / FOOTER ---------- */
-  --header-bg:              var(--bg-page);
-  --header-text:            var(--text-primary);
-  --footer-bg:              var(--bg-section-light);
-  --footer-text:            var(--text-body);
+  HEADER / FOOTER
+  --header-bg: var(--bg-page);
+  --header-text: var(--text-primary);
+  --footer-bg: var(--bg-section-light);
+  --footer-text: var(--text-body);
 }
 
-/* Exemple d'utilisation :
-   .btn-primary { background: var(--btn-primary-bg); color: var(--btn-primary-text); }
-   .btn-primary:hover { background: var(--btn-primary-bg-hover); }
-   .card--dark { background: var(--card-bg-dark); color: var(--card-text-on-dark); }
-*/ */
+Exemple d'utilisation :
+.btn-primary { background: var(--btn-primary-bg); color: var(--btn-primary-text); }
+.btn-primary:hover { background: var(--btn-primary-bg-hover); }
+.card--dark { background: var(--card-bg-dark); color: var(--card-text-on-dark); }
+*/
