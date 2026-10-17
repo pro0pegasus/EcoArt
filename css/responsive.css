@@ -433,6 +433,110 @@
         height: 220px;
         transform: translateY(-50%);
     }
+
+    /* ---------- PAGE SERVICES : HEAD ---------- */
+    .second-responsive-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .second-responsive-header h1{
+        max-width: 760px;
+    }
+    .second-responsive-header .para-head{
+        max-width: 640px;
+    }
+    .filiere-parts{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+    }
+    .part1{
+        font-size: 12px;
+        letter-spacing: 0.05em;
+    }
+    .part2,
+    .part3{
+        font-size: 13px;
+    }
+
+    /* ---------- PAGE SERVICES : SESSIONS ---------- */
+    .atelier-cont:has(.container-days-card-new){
+        display: block;
+        background-color: transparent;
+        padding: 40px 0 0;
+    }
+    .atelier-cont:has(.container-days-card-new) > .text-atelier2,
+    .atelier-cont:has(.container-days-card-new) > .text-atelier3{
+        padding: 0 var(--gutter);
+    }
+    .container-days-card-new{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 24px var(--gutter) 48px;
+    }
+    .container-days-card-new .card1-texte .div-eco{
+        margin: 0 0 12px;
+    }
+    .container-prix-carte{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-bottom: 12px;
+    }
+    .container-prix-carte .second-cards-text{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+    .days-cards{
+        padding: 0 20px 16px;
+    }
+    .card-days-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    .days-titre,
+    .days-conte{
+        margin: 0;
+        font-size: 12px;
+    }
+    .days-cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .paragraph-card-days{
+        margin: 0;
+        font-size: 12px;
+    }
+    .container-days-card-new .price-prix{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+
+    /* ---------- PAGE SERVICES : RÉSERVATION ---------- */
+    #reserve-p-un,
+    .para-reserver{
+        text-align: center;
+    }
+    .para-reserver{
+        max-width: 640px;
+        margin: 0 auto 24px;
+        font-size: 14px;
+    }
+    .reserver-place-cont .cards-makers{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* =========================================================
@@ -449,6 +553,7 @@
         column-gap: 64px;
         padding: 40px var(--gutter);
     }
+    
     h1{
         font-size: 48px;
     }
@@ -598,8 +703,29 @@
     }
     /* PAGE SERVICES */
     /* HEAD */
-    
+    .second-responsive-header h1{
+        max-width: 900px;
+    }
+    .second-responsive-header .para-head{
+        max-width: 720px;
+    }
+    .part2,
+    .part3{
+        font-size: 14px;
+    }
 
+    /* SESSIONS */
+    .days-cards{
+        padding: 0 16px 16px;
+    }
+
+    /* RÉSERVATION */
+    .para-reserver{
+        font-size: 15px;
+    }
+    .reserver-place-cont .cards-makers{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 /* =========================================================
@@ -713,4 +839,22 @@
         font-size: 42px;
     }
 
+    /* PAGE SERVICES */
+    /* SESSIONS */
+    .container-days-card-new{
+        gap: 24px;
+    }
+    .days-cards{
+        padding: 0 20px 20px;
+    }
+
+    /* RÉSERVATION */
+    .para-reserver{
+        font-size: 16px;
+    }
+
 }
+
+
+
+
