@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoArt</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/contct.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="css/contct.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -15,9 +15,13 @@
 <body>
 
     <header>
-        <div>
-            <img src="assets/images/Logo EcoArt.png" alt="Logo EcoArt">
-            <a href="contact.html" class="Logo"></a>
+        <div class="Container">
+            <article class="Link">
+                <img src="assets/images/Logo EcoArt.png" alt="Logo EcoArt">
+                <div class="Container">
+                    <p>EcoArt</p>
+                </div>
+            </article>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -32,79 +36,150 @@
 
     <main>
 
-        <section>
-            <div>
-                <div>
-                    <div> 
-                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 10.6667V5.33333H2.66667V10.6667H0ZM4 10.6667V0H6.66667V10.6667H4ZM8 10.6667V3.33333H10.6667V10.6667H8Z" fill="white"/>
-                        </svg>
+        <section class="Top Visual">
+            <div class="Container">
+                <div class="Container">
+                    <span class="Background">
+                        <article class="Container"> 
+                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10.6667V5.33333H2.66667V10.6667H0ZM4 10.6667V0H6.66667V10.6667H4ZM8 10.6667V3.33333H10.6667V10.6667H8Z" fill="white"/>
+                            </svg>
+                        </article>
                         <p>AUDIT DE CIRCULARITE & DIALOGUE OUVERT</p>
-                    </div>
+                    </span>
                     <h1>Notre empreinte Positive & Parlons-en</h1>
                     <p>Mesurer notre impact tangible, certifier chaque gramme detourne des decharges et co-construire l'artisanat regeneratif de demain.</p>
                 </div>
-                <div>
-                    <span>
+                <div class="Live Calculation">
+                    <span class="Container">
                         <p>Icone</p>
                         <p>Icone</p>
                     </span>
-                    <span>
-                        <p>MISE A JOUR CERTIFIEE</p>
-                        <span>T1 2025 . Nome ADEME</span>
+                    <span class="Container">
+                        <span><p>MISE A JOUR CERTIFIEE</p></span>
+                        <span><p>T1 2025 . Nome ADEME</p></span>
                     </span>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <article>
-                    <span>
-                        <div>
-                            <span><p>Icone</p></span>
+        <section class="Metric Scoreboard">
+            <div class="Container">
+
+                <article class="Metric 1">
+                    <span class="Container">
+                        <div class="Background">
+                            <span class="Container">
+                                <p>Icone</p>
+                            </span>
                         </div>
-                        <div>+34% vs 2024</div>
+                        <div class="Background">
+                            <p>+34% vs 2024</p>
+                        </div>
                     </span>
-                    <span>
-                        <div>
-                            <h1>18450</h1> <a>kg</a>
+                    <span class="Container">
+                        <div class="Container">
+                            <span class="Margin">
+                                <p>Kg</p>
+                            </span>
+                            <p>18450</p>
+                        </div>
+                        <div class="Container">
                             <p>Rebuts nobles valorisés</p>
+                        </div>
+                        <div class="Container">
                             <p>Chutes d'ateliers, bois de charpente et rebuts industriels recyclés.</p>
                         </div>
                     </span>
                 </article>
 
-                <article>
-                    div>Evitement direct</div>
-                    <h1>32,8</h1>
-                    <p>t CO2e</p>
-                    <p>Emissions Evitées</p>
-                    <p>Comparé a la producton industrielle d'équivalents neufs non-circulaires.</p>
+                <article class="Metric 2">
+                    <span class="Container">
+                        <div class="Background">
+                            <span>
+                                <p>Icone</p>
+                            </span>
+                        </div>
+                        <div class="Background">
+                            <p>Evitement direct</p>
+                        </div>
+                    </span>
+                    <span class="Container">
+                        <div class="Container">
+                            <span class="Margin">
+                                <p>t CO2e</p>
+                            </span>
+                            <p>32,8</p>
+                        </div>
+                        <div class="Container">
+                            <p>Emissions Evitées</p>
+                        </div>
+                        <div class="Container">
+                            <p>Comparé a la producton industrielle d'équivalents neufs non-circulaires.</p>
+                        </div>
+                    </span>
                 </article>
 
-                <article>
-                    <div>Filière séche</div>
-                    <h1>142000</h1>
-                    <p>L</p>
-                    <p>Eau potable préservée</p>
-                    <p>Procédés de décapage et teinture végétale a circuit fermé.</p>
+                <article class="Metric 3">
+                    <span class="Container">
+                        <div class="Background">
+                            <span>
+                                <p>Icone</p>
+                            </span>
+                        </div>
+                        <div class="Background">
+                            <p>Filière séche</p>
+                        </div>
+                    </span>
+                    <span class="Container">
+                        <div class="Container">
+                            <span class="Margin">
+                                <p>L</p>
+                            </span>
+                            <p>142000</p>
+                        </div>
+                        <div class="Container">
+                            <p>Eau potable préservée</p>
+                        </div>
+                        <div class="Container">
+                            <p>Procédés de décapage et teinture végétale a circuit fermé.</p>
+                        </div>
+                    </span>
                 </article>
 
-                <article>
-                    <div>Social & Inclusion</div>
-                    <h1>820</h1>
-                    <p>hrs</p>
-                    <p>Transmission & Ateliers</p>
-                    <p>Apprentissage de la réparation du surcyclage et insertion locale.</p>
+                <article class="Metric 4">
+                    <span class="Container">
+                        <div class="Background">
+                            <span>
+                                <p>Icone</p>
+                            </span>
+                        </div>
+                        <div class="Background">
+                            <p>Social & Inclusion</p>
+                        </div>
+                    </span>
+                    <span class="Container">
+                        <div class="Container">
+                            <span class="Margin">
+                                <p>hrs</p>
+                            </span>
+                            <p>820</p>
+                        </div>
+                        <div class="Container">
+                            <p>Transmission & Ateliers</p>
+                        </div>
+                        <div class="Container">
+                            <p>Apprentissage de la réparation du surcyclage et insertion locale.</p>
+                        </div>
+                    </span>
                 </article>
 
             </div>
         </section>
 
 
-        <section class="Material">
-            <div>
+        <section class="Material Breakdown">
+            <div class="Container">
                 <div class="Left Column">
                     <div class="Container">
                         <span>
@@ -412,6 +487,137 @@
                 <p>Réponse artisanale sous 24h ouvrées</p>
             </article>
         </section>
+        
+        <!-- <img > -->
+
+        <section class="Background">
+            <div class="Container">
+                <article>
+                    <p>FOIRE AUX QUESTIONS</p>
+                    <span>
+                        <h2>Questions Fréquentes sur notre Impact</h2>
+                    </span>
+                </article>
+                <article class="Container">
+                    <span class="Details>Slot>Summery">
+                        <div>
+                            <p>Comment les emissions de CO2 evitees sont-elles calculees?</p>
+                        </div>
+                        <div>
+                            <p>Icone</p>
+                        </div>
+                    </span>
+                    <span class="Details">
+                        <div class="Slot>Summery">
+                            <article>
+                                <p>Puis-je apporter mes propres materiaux rebuts pour un projet?</p>
+                            </article>
+                            <article>
+                                <p>Icone</p>
+                            </article>
+                        </div>
+                    </span>
+                    <span class="Details">
+                        <div class="Slot>Summery">
+                            <article>
+                                <p>Proposez-vous des formats d'ateliers pour les equipes RSE d'entreprises?</p>
+                            </article>
+                            <article>
+                                <p>Icone</p>
+                            </article>
+                        </div>
+                    </span>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <img>
+            <div class="Group 4">
+                <p>Plateforme d'artisanat circulaire valorisant les rebuts obles. Conception numerique sobre, tracabilite certifiee et reduction de l'empreinte carbone materiel.</p>
+                <span class="Groupe 9">
+                    <p>Index Eco-Index : A</p>
+                    <img>
+                    <div class="Background">
+                        <div class="Container">
+                            <p>Icone</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="Group 11">
+                <div class="Groupe 3">
+                    <span class="List">
+                        <article>
+                            <p>Bois de reemploi & chene sauve</p>
+                        </article>
+                        <article>
+                            <p>Verre recycle au four solaire</p>
+                        </article>
+                        <article>
+                            <p>Textile surcycles d'ateliers</p>
+                        </article>
+                        <article>
+                            <p>Metaux ferreux recoditionnes</p>
+                        </article>
+                        <article>
+                            <p>Charte Zero dechet d'atelier</p>
+                        </article>
+                    </span>
+                    <span class="Container">
+                        <p>Filiere Circulaire</p>
+                    </span>
+                </div>
+            </div>
+            <div class="Group 8">
+                <div class="Container">
+                    <article class="Container">
+                        <p>Labels & Certifications</p>
+                    </article>
+                    <article class="Container">
+                        <span class="Background">
+                            <span class="Container">
+                                <p>Label Upcycling Certifie UE</p>
+                            </span>
+                            <p>Norme tracabilite matiere brute a 100%</p>
+                        </span>
+                        <span class="Background">
+                            <div class="Container">
+                                <p>Garantie Artisans d'Art</p>
+                            </div>
+                            <p>Transmission et fabrication locale</p>
+                        </span>
+                    </article>
+                </div>
+            </div>
+            <div class="Group 7">
+                <article class="Container">
+                    <span class="Container">
+                        <div class="Input-Votre adresse">
+                            <div class="Container">
+                                <p>votre.email@domaine.fr</p>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="Button">
+                        <p>S'inscrire</p>
+                    </span>
+                    <span class="Container">
+                        <p>Desinscription en 1 clic. Donnees hebergees en France</p>
+                    </span>
+                </article>
+                <article class="Container">
+                    <p>Une seule edition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+                </article>
+                <article class="Container">
+                    <p>Newsletter Sobre</p>
+                </article>
+            </div>
+            <div class="Copyright">
+                <p>© 2025 EcoArt (NextLine client). Tous droits reserves.</p>
+            </div>
+        </footer>
+
         </main>
     </body>
 </html>
