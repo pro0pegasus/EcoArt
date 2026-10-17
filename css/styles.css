@@ -93,12 +93,14 @@ nav{
 .hero{
     gap: 15px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; 
 }
 
 .hero__description {
-    padding: 20px 20px;
+    display: flex;
+    padding: 20px ;
+    flex-direction: column;
+    gap: 12px;
 }
 
 
@@ -106,12 +108,14 @@ nav{
     font-family: "Space Grotesk", sans-serif;
     font-size: 36px;
     color: #151D19;
+    margin:0;
 }
 
 .hero__description p{
     font-family: "Atkinson Hyperlegible Next", sans-serif;
     font-size: 18px;
     color: #414943;
+    margin: 0;
 }
 
 .dot{
@@ -139,13 +143,9 @@ nav{
 
 
 .status{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     box-sizing: border-box;
-    padding: 20px 20px;
-}
+    padding: 0 20px 20px;
+} 
 
 .stats {
   display: flex;
@@ -156,16 +156,16 @@ nav{
   color: #F2FCF4;
   border-radius: 4px;
   font-family: "Space Grotesk", sans-serif;
-  gap: 10px;
+  align-items: flex-start;
+  
 }
 
 .stats__col {
-  flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   gap: 4px;
-  position: relative;          
+  position: relative;     
 }
 
 .stats__col + .stats__col::before {
@@ -199,14 +199,22 @@ nav{
 .stats__value span {
   font-size: 20px;
   margin-left: 4px;
-}
+} 
 
 .stats__note {
   margin: 0;
   font-size: 11px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -248,8 +256,8 @@ nav{
 
 .trust-bar img {
   display: block;
-  width: 12px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
 }
 
 
@@ -329,6 +337,10 @@ nav{
 
 
 
+
+
+
+
 .engagements__cadre {
   background: #35553d;
   padding: 20px 20px;
@@ -377,3 +389,64 @@ nav{
   line-height: 1.5;
   color: #333;
 }
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .trust-bar {
+    align-items: flex-start;      
+    text-align: left;
+    padding: 12px 24px;
+    gap: 6px;                    
+  }
+
+  .trust-bar__title,
+  .trust-bar__content {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .trust-bar__title p + p::before {
+    content: "•";
+    margin-right: 8px;
+  }
+  .trust-bar__content p + p::before {
+    content: "|";
+    margin-right: 8px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hero__description h1 { font-size: 48px; }
+  .hero__description p  { font-size: 20px; }
+
+  
+  .red { order: -1; }
+
+  .status { padding: 0 20px 20px; }
+
+  .stats {
+    width: fit-content;         
+    gap: 24px;
+  }
+  .stats__col { flex: none; }
+  .stats__col + .stats__col::before { left: -12px; }  
+}
+
+
+
+
+
+
+
+
+
