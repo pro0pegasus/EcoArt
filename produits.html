@@ -6,11 +6,14 @@
     <title>EcoArt - Catalogue</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" rel="stylesheet">
-</head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  </head>
 <body>
 
 <header>
@@ -60,7 +63,7 @@
         <p class="stats__value">14.8<span>t</span></p>
         <p class="stats__note">Depuis janvier 2025</p>
        </div>
-      
+          <span>|</span>
        <div class="stats__col">
         <p class="stats__label">ÉMISSIONS ÉVITÉES</p>
         <p class="stats__value">-32.4<span>t</span></p>
@@ -81,22 +84,23 @@
 
     <div class="recherche__filters">
       <p>ESPACES :</p>
-      <button type="button" class="filter-button is-active">Tous</button>
-      <button type="button" class="filter-button">Salon</button>
-      <button type="button" class="filter-button">Art de la table</button>
-      <button type="button" class="filter-button">Luminaire</button>
-      <button type="button" class="filter-button">Décoration</button>
-      <button type="button" class="filter-button">Mobilier</button>
+      <a href="#produits" class="filter-button is-active">Tous</a>
+      <a href="#salon" class="filter-button">Salon</a>
+      <a href="#art-de-la-table" class="filter-button">Art de la table</a>
+      <a href="#luminaire" class="filter-button">Luminaire</a>
+      <a href="#decoration" class="filter-button">Décoration</a>
+      <a href="#mobilier" class="filter-button">Mobilier</a>
     </div>
 
     <div class="recherche__sort">
       <label for="sort">TRIER :</label>
       <select id="sort">
         <option value="new">Nouveautés d'atelier</option>
-        <option value="price-asc">Prix croissant</option>
-        <option value="price-desc">Prix décroissant</option>
-        <option value="name-asc">Nom A-Z</option>
-        <option value="name-desc">Nom Z-A</option>
+        <option value="toutes">Toutes les matières</option>
+        <option value="bois">Bois revalorisé</option>
+        <option value="tissus">Tissus &amp; Textiles</option>
+        <option value="verre">Verre surcyclé</option>
+        <option value="plastiques">Plastiques techniques</option>
       </select>
     </div>
 
@@ -104,19 +108,19 @@
       <p class="pppp">MATIÈRE REVALORISÉE :</p>
       <div class="buttons-conteneeeur">
         <button class="is-active">
-          <img src="assets/icons/toutes.png" alt="toutes">
+         <i class="fa-solid fa-infinity" style="color: rgb(37, 80, 30);"></i>
           Toutes les matières</button>
         <button>
-          <img src="assets/icons/bois.png" alt="bois">
+          <i class="fa-solid fa-tree" style="color: rgb(107, 55, 20);"></i>
           Bois revalorisé</button>
         <button>
-          <img src="assets/icons/tissus.png" alt="tissus">
+          <img class="icon_seul" src="assets/icons/tissus.png" alt="tissus">
           Tissus &amp; Textiles</button>
         <button>
-          <img src="assets/icons/verre.png" alt="verre">
+          <img class="icon_seul" src="assets/icons/verre.png" alt="verre">
           Verre surcyclé</button>
         <button>
-           <img src="assets/icons/plastiques.png" alt="plastiques">
+           <img class="icon_seul"  src="assets/icons/plastiques.png" alt="plastiques">
            Plastiques techniques</button>
         </div>
       <p class="matiere__count">8 pièces uniques disponibles</p>
@@ -124,11 +128,11 @@
 
   </div>
 
-  <div class="produits">
+  <div class="produits" id="produits">
 
-    <article class="card">
+    <article class="card" id="art-de-la-table">
       <div class="card__photo">
-        <img src="assets/images/Bouteilles.png" alt="Carafe Écume Brute en bouteilles de vin recyclées">
+        <img class="phtophoto" src="assets/images/Bouteilles.png" alt="Carafe Écume Brute en bouteilles de vin recyclées">
         <span class="badge haut">
           <img src="assets/icons/verre.png" alt="verre">
           100% Bouteilles de vin recyclées</span>
@@ -155,9 +159,9 @@
       </div>
     </article>
 
-    <article class="card">
+    <article class="card" id="salon">
       <div class="card__photo">
-        <img src="assets/images/SALON.png" alt="Coussin Géométrique Parcelle">
+        <img class="phtophoto" src="assets/images/SALON.png" alt="Coussin Géométrique Parcelle">
         <span class="badge haut">
           <img src="assets/icons/tissus.png" alt="tissus">
           Chutes de Lin Normand</span>
@@ -184,9 +188,9 @@
       </div>
     </article>
 
-    <article class="card">
+    <article class="card" id="mobilier">
       <div class="card__photo">
-        <img src="assets/images/MOBILIER.png" alt="Assise Terrazzo Estran">
+        <img class="phtophoto" src="assets/images/MOBILIER.png" alt="Assise Terrazzo Estran">
         <span class="badge haut">
           <img src="assets/icons/Recycler.png" alt="Recycler icon">
           100% Déchets Plastiques Marins</span>
@@ -213,9 +217,9 @@
       </div>
     </article>
 
-    <article class="card">
+    <article class="card" id="luminaire">
       <div class="card__photo">
-        <img src="assets/images/Lamp.png" alt="Lampe d'ambiance Bille de Chêne">
+        <img class="phtophoto" src="assets/images/Lamp.png" alt="Lampe d'ambiance Bille de Chêne">
         <span class="badge haut">
           <img src="assets/icons/bois.png" alt="bois">
           95% Chêne de charpente sauvé</span>
@@ -242,9 +246,9 @@
       </div>
     </article>
 
-    <article class="card">
+    <article class="card" id="decoration">
       <div class="card__photo">
-        <img src="assets/images/Soliflore.png" alt="Soliflore Organique Goutte">
+        <img class="phtophoto" src="assets/images/Soliflore.png" alt="Soliflore Organique Goutte">
         <span class="badge haut">
           <img src="assets/icons/bois.png" alt="bois">
           100% Bocaux &amp; Verre Cullet</span>
@@ -273,7 +277,7 @@
 
     <article class="card">
       <div class="card__photo">
-        <img src="assets/images/Planche.png" alt="Planche d'apparat Mosaïque">
+        <img class="phtophoto" src="assets/images/Planche.png" alt="Planche d'apparat Mosaïque">
         <span class="badge haut">
           <img src="assets/icons/bois.png" alt="bois">
           Chutes d'Ébénisterie Locale</span>
@@ -302,7 +306,7 @@
 
     <article class="card">
       <div class="card__photo">
-        <img src="assets/images/DÉCORATION.png" alt="Coupe Vide-Poche Sillage">
+        <img class="phtophoto" src="assets/images/DÉCORATION.png" alt="Coupe Vide-Poche Sillage">
         <span class="badge haut">
           <img src="assets/icons/Recycler.png" alt="Recycler icon">
           100% Flacons HDPE Ménagers</span>
@@ -331,7 +335,7 @@
 
     <article class="card">
       <div class="card__photo">
-        <img src="assets/images/LUMINAIRE.png" alt="Suspension Cocon Grand Large">
+        <img class="phtophoto" src="assets/images/LUMINAIRE.png" alt="Suspension Cocon Grand Large">
         <span class="badge haut">
           <img src="assets/icons/tissus.png" alt="tissus">
           Voiles de Bateaux Surcyclées</span>
@@ -421,18 +425,5 @@
 
 </section>
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
