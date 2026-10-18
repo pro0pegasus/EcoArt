@@ -1,0 +1,2397 @@
+:root{
+    --gutter: 24px;
+}
+
+/* TABLETTE  >= 744px */
+@media (min-width: 744px) {
+
+    /* PAGE ARTISANS */
+    :where(main:has(.uppersection)) .front-left {
+        padding: 0;
+    }
+
+    :where(main:has(.uppersection)) .title h1 {
+        font-size: 56px;
+    }
+
+    :where(main:has(.uppersection)) .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    :where(main:has(.uppersection)) .card-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    :where(main:has(.uppersection)) .details {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 4px;
+    }
+
+    :where(main:has(.uppersection)) .products {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    :where(main:has(.uppersection)) .card-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    :where(main:has(.uppersection)) .card button {
+        width: auto;
+    }
+
+    :where(main:has(.uppersection)) .card5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        padding: 40px 24px;
+    }
+
+    :where(main:has(.uppersection)) .card5 iframe {
+        height: 300px;
+    }
+}
+
+/* TABLETTE  >= 768px */
+@media (min-width: 768px) {
+    :root{
+        --gutter: 20px;
+        --nav-h: 76px;
+    }
+
+    /* ---------- NAV : menu horizontal ---------- */
+    .nav{
+        padding: 16px var(--gutter);
+    }
+    .burger,
+    .toggle{
+        display: none;
+    }
+    .items{
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        background-color: transparent;
+    }
+    .item{
+        border-top: none;
+        padding: 8px 14px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+
+    /* ---------- HERO : 2 colonnes ---------- */
+    .header-section{
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        column-gap: 40px;
+        align-items: start;
+        align-content: center;
+        padding: 40px var(--gutter);
+        min-height: calc(100vh - var(--nav-h));
+        min-height: calc(100svh - var(--nav-h));
+    }
+    .div-eco{
+        grid-column: 1 / -1;
+        justify-self: start;
+        width: fit-content;
+        margin: 0 0 24px;
+    }
+    h1{
+        grid-column: 1;
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0 0 20px;
+    }
+    .header-img{
+        grid-column: 2;
+        grid-row: 2 / span 4;
+        align-self: stretch;
+        margin: 0;
+    }
+    .header-section > div:has(> .para-head),
+    .container-button,
+    .paragraphs-head{
+        grid-column: 1;
+    }
+    .img-header{
+        height: 360px;
+    }
+    .div-h23{
+        top: auto;
+        bottom: 56px;
+        left: 5%;
+        right: 5%;
+        width: auto;
+    }
+    .h2-head{
+        font-size: 11px;
+        letter-spacing: 0.05em;
+    }
+    .h3-head{
+        font-size: 14px;
+    }
+    .div-h23 > p{
+        font-size: 12px;
+    }
+    .unique{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 2px 10px;
+    }
+    .unique p{
+        font-size: 12px;
+    }
+    .div-card-head{
+        width: fit-content;
+        max-width: 260px;
+        margin: -44px 0 0 -16px;
+    }
+    .div-card-head #p-head{
+        font-size: 11px;
+    }
+    .para-head{
+        font-size: 15px;
+        margin: 0 0 24px;
+    }
+    .container-button{
+        flex-direction: row;
+        width: auto;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    .button-head button{
+        width: auto;
+        padding: 12px 20px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    .paragraphs-head{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+    }
+    .paragraphs-head div{
+        height: auto;
+        font-size: 11px;
+    }
+
+    /* ---------- STATS : 3 colonnes ---------- */
+    .card-info-section{
+        display: flex;
+        margin: 32px var(--gutter) 0;
+        padding: 24px;
+        border-radius: 12px;
+    }
+    .card-info{
+        flex: 1;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .card-info .number{
+        font-size: 40px;
+    }
+    .card-info .text1{
+        font-size: 16px;
+    }
+    .card-info .text2{
+        font-size: 12px;
+    }
+    .separation{
+        width: 1px;
+        height: auto;
+        align-self: stretch;
+    }
+
+    /* ---------- EN-TÊTES DE SECTION ---------- */
+    .article-head{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        align-items: end;
+        padding: 56px var(--gutter) 24px;
+    }
+    .article-head .article-h{
+        grid-column: 1;
+        font-size: 12px;
+        margin: 0 0 8px;
+    }
+    .article-head .article-titre{
+        grid-column: 1;
+        font-size: 28px;
+        margin: 0;
+    }
+    .article-head .article-p{
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        font-size: 14px;
+        margin: 0;
+    }
+    body > article:nth-of-type(2) .article-p{
+        text-align: right;
+    }
+    .article-head:has(+ .article-cards-second){
+        display: block;
+        text-align: center;
+    }
+    .article-head:has(+ .article-cards-second) .article-h{
+        color: var(--raw-terracotta-720);
+    }
+    .article-head:has(+ .article-cards-second) .article-p{
+        margin: 12px auto 0;
+        max-width: 640px;
+    }
+
+    /* ---------- CARTES (filières + produits) : 2 colonnes ---------- */
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0 var(--gutter) 40px;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1-texte{
+        flex: 1;
+        padding: 20px;
+    }
+    #card1-texte-head{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .card1-texte-head{
+        margin: 0;
+    }
+    .card1-texte-head .filiere{
+        font-size: 12px;
+        margin: 6px;
+    }
+    .gisement{
+        font-size: 12px;
+    }
+    .h3-texte-card{
+        font-size: 22px;
+    }
+    .para-card{
+        font-size: 14px;
+    }
+    .card-image{
+        height: 200px;
+    }
+    .bois p{
+        font-size: 12px;
+        height: 24px;
+    }
+    .bois{
+        width: auto;
+    }
+    .bois p{
+        padding: 0 10px;
+    }
+    .second-cards-text{
+        font-size: 12px;
+    }
+    .price-card{
+        justify-content: space-between;
+        padding: 0 20px 20px;
+    }
+    .price-card .price-prix{
+        font-size: 12px;
+    }
+    .taman{
+        font-size: 24px;
+    }
+    .button-price-card{
+        width: auto;
+        height: 36px;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    /* ---------- MANIFESTE : 3 colonnes ---------- */
+    .article-cards-second{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 var(--gutter) 48px;
+    }
+    .card-second{
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .text-card-second{
+        align-items: flex-start;
+    }
+    .second-card-nombre{
+        width: 40px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .second-card-title{
+        font-size: 22px;
+        text-align: left;
+        margin: 12px 0;
+    }
+    .second-card-paragra{
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+    }
+    .foot-card-second{
+        font-size: 12px;
+        margin-top: 24px;
+    }
+
+    /* ---------- ATELIER (image en haut, texte en dessous) ---------- */
+    .atelier-cont{
+        background-color: var(--raw-green-650);
+        padding: 40px var(--gutter) 0;
+    }
+    .img-atelier{
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
+    }
+    .atelier-image-img{
+        height: 320px;
+    }
+    .img-para-atelier{
+        width: auto;
+        padding: 6px 12px;
+        font-size: 11px;
+        left: 16px;
+        top: 16px;
+    }
+    .text-atelier-div{
+        background-color: var(--raw-surface-mint);
+        padding: 24px;
+        border-radius: 0 0 12px 12px;
+    }
+    .text-atelier1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px 20px;
+    }
+    .p1-at-div{
+        padding: 8px 0;
+    }
+    .p1-at,
+    .p2-at,
+    .p3-at{
+        font-size: 12px;
+    }
+    .text-atelier2 p{
+        font-size: 32px;
+        text-align: left;
+    }
+    .text-atelier3 p{
+        font-size: 15px;
+    }
+    .text-atelier5{
+        padding-bottom: 0;
+    }
+    .text-atelier5 button{
+        width: auto;
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+    /* ---------- AVIS : 3 colonnes ---------- */
+    #makers{
+        border-radius: 0;
+        padding: 32px var(--gutter) 48px;
+    }
+    .makers{
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 24px;
+    }
+    .cards-makers{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .card-make{
+        padding: 16px;
+    }
+    .etoile-para{
+        font-size: 13px;
+    }
+    .al{
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+        font-size: 14px;
+    }
+    .ant-p1{
+        font-size: 14px;
+    }
+    .ant-p2{
+        font-size: 12px;
+    }
+
+    /* ---------- CTA : bandeau vert + carte ---------- */
+    .cta{
+        flex-direction:column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 40px var(--gutter);
+        padding: 40px;
+        transform: none;
+        box-shadow: 0 0 0 100vmax var(--raw-green-900);
+        clip-path: inset(-40px -100vmax);
+    }
+    .cta-label{
+        order: -1;
+        flex-basis: 100%;
+        font-size: 11px;
+    }
+    .cta-titre{
+        flex-basis: 100%;
+        max-width: 640px;
+        font-size: 32px;
+    }
+    .cta-para{
+        flex-basis: 100%;
+        max-width: 560px;
+        font-size: 15px;
+    }
+    .cta-btn1,
+    .cta-btn2{
+        padding: 12px 22px;
+        font-size: 13px;
+    }
+    .cta-deco{
+        top: 50%;
+        bottom: auto;
+        right: 32px;
+        width: 220px;
+        height: 220px;
+        transform: translateY(-50%);
+    }
+
+    /* ---------- PAGE SERVICES : HEAD ---------- */
+    .second-responsive-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .second-responsive-header h1{
+        max-width: 760px;
+    }
+    .second-responsive-header .para-head{
+        max-width: 640px;
+    }
+    .filiere-parts{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+    }
+    .part1{
+        font-size: 12px;
+        letter-spacing: 0.05em;
+    }
+    .part2,
+    .part3{
+        font-size: 13px;
+    }
+
+    /* ---------- PAGE SERVICES : SESSIONS ---------- */
+    .atelier-cont:has(.container-days-card-new){
+        display: block;
+        background-color: transparent;
+        padding: 40px 0 0;
+    }
+    .atelier-cont:has(.container-days-card-new) > .text-atelier2,
+    .atelier-cont:has(.container-days-card-new) > .text-atelier3{
+        padding: 0 var(--gutter);
+    }
+    .container-days-card-new{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 24px var(--gutter) 48px;
+    }
+    .container-days-card-new .card1-texte .div-eco{
+        margin: 0 0 12px;
+    }
+    .container-prix-carte{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-bottom: 12px;
+    }
+    .container-prix-carte .second-cards-text{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+    .days-cards{
+        padding: 0 20px 16px;
+    }
+    .card-days-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    .days-titre,
+    .days-conte{
+        margin: 0;
+        font-size: 12px;
+    }
+    .days-cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .paragraph-card-days{
+        margin: 0;
+        font-size: 12px;
+    }
+    .container-days-card-new .price-prix{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+
+    /* ---------- PAGE SERVICES : RÉSERVATION ---------- */
+    #reserve-p-un,
+    .para-reserver{
+        text-align: center;
+    }
+    .para-reserver{
+        max-width: 640px;
+        margin: 0 auto 24px;
+        font-size: 14px;
+    }
+    .reserver-place-cont .cards-makers{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: left;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 32px 24px;
+        padding: 32px 24px 0;
+    }
+
+    .brand,
+    .index-eco,
+    .filiere-circulaire,
+    .labels-certifications,
+    .newsletter {
+        align-items: flex-start;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 16px;
+    }
+
+    .newsletter form {
+        flex-direction: row;
+    }
+
+    .newsletter input {
+        flex: 1;
+        width: auto;
+        min-width: 0;
+    }
+
+    .btn {
+        width: auto;
+        padding: 6px 16px;
+        white-space: nowrap;
+    }
+
+    .credits {
+        grid-column: 1 / -1;
+        width: auto;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px 0 32px;
+        background-color: transparent;
+    }
+
+    .credits-info,
+    .credits-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 16px;
+    }
+
+    .credits-links,
+    .A {
+        display: flex;
+    }
+
+    /* PAGE CATALOGUE */
+    /* TRUST BAR */
+    :where(.catalogue) .trust-bar {
+        align-items: flex-start;
+        text-align: left;
+        padding: 12px 24px;
+        gap: 6px;
+    }
+
+    :where(.catalogue) .trust-bar__title,
+    :where(.catalogue) .trust-bar__content {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    :where(.catalogue) .trust-bar__title p:first-of-type {
+        text-transform: uppercase;
+    }
+
+    :where(.catalogue) .trust-bar__title p + p::before {
+        content: "•";
+        margin-right: 8px;
+    }
+
+    :where(.catalogue) .trust-bar__content p + p::before {
+        content: "|";
+        margin-right: 8px;
+    }
+
+    /* HERO */
+    :where(.catalogue) .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 0 24px;
+    }
+
+    :where(.catalogue) .hero__description {
+        flex: 1;
+        max-width: 700px;
+        padding: 16px 0 20px;
+    }
+
+    :where(.catalogue) .hero__description h1 {
+        font-size: 48px;
+    }
+
+    :where(.catalogue) .hero__description p {
+        font-size: 20px;
+    }
+
+    :where(.catalogue) .red {
+        order: -1;
+    }
+
+    :where(.catalogue) .hero__tag {
+        margin: 0;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+    }
+
+    :where(.catalogue) .status {
+        flex: none;
+        padding: 24px 0 20px;
+    }
+
+    :where(.catalogue) .stats {
+        flex-direction: column;
+        width: 180px;
+        padding: 20px 16px;
+        gap: 16px;
+        text-align: center;
+    }
+
+    :where(.catalogue) .stats > span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        font-size: 0;
+        background: #F2FCF4;
+        opacity: 0.4;
+    }
+
+    :where(.catalogue) .stats__col {
+        flex: none;
+        text-align: center;
+    }
+
+    :where(.catalogue) .stats__value {
+        font-size: 36px;
+    }
+
+    /* RECHERCHE */
+    :where(.catalogue) .recherche {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 24px;
+        background: #fff;
+        border-bottom: 1px solid #E6F0E8;
+    }
+
+    :where(.catalogue) .recherche__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 16px;
+        background: #37583C;
+        border-radius: 4px;
+    }
+
+    :where(.catalogue) .recherche__title img {
+        width: 16px;
+        height: 16px;
+        flex: none;
+    }
+
+    :where(.catalogue) #search {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        padding: 12px 0;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        color: #F2FCF4;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 13px;
+    }
+
+    :where(.catalogue) #search::placeholder {
+        color: #E6F0E8;
+        opacity: 0.9;
+    }
+
+    :where(.catalogue) .recherche__filters {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    :where(.catalogue) .recherche__filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    :where(.catalogue) .recherche__filters p {
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    :where(.catalogue) .recherche__filters a {
+        flex: none;
+        white-space: nowrap;
+    }
+
+    :where(.catalogue) .recherche__sort {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    :where(.catalogue) .recherche__sort label {
+        white-space: nowrap;
+    }
+
+    :where(.catalogue) #sort {
+        flex: 1;
+        min-width: 0;
+    }
+
+    :where(.catalogue) .matiere {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        background: #F2FCF4;
+        border-radius: 4px;
+    }
+
+    :where(.catalogue) .matiere .pppp {
+        margin: 0;
+    }
+
+    :where(.catalogue) .buttons-conteneeeur button {
+        align-items: center;
+        padding: 8px 12px;
+        background: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    :where(.catalogue) .buttons-conteneeeur button i {
+        margin-right: 10px;
+    }
+
+    :where(.catalogue) .buttons-conteneeeur button.is-active {
+        background: #37583C;
+        color: #F2FCF4;
+    }
+
+    :where(.catalogue) .matiere__count {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* PRODUITS */
+    :where(.catalogue) .produits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 32px 24px 24px;
+    }
+
+    :where(.catalogue) .card__photo {
+        position: relative;
+        height: 220px;
+    }
+
+    :where(.catalogue) .card__photo .phtophoto {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    :where(.catalogue) .card__photo .badge {
+        position: absolute;
+        width: auto;
+        margin: 0;
+        padding: 4px 8px;
+        border-radius: 8px;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    :where(.catalogue) .card__photo .badge.haut {
+        top: 8px;
+        left: 8px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        max-width: calc(100% - 100px);
+    }
+
+    :where(.catalogue) .card__photo .badge.haut img {
+        width: 12px;
+        height: 12px;
+        flex: none;
+    }
+
+    :where(.catalogue) .card__photo .badge.droite {
+        top: 8px;
+        right: 8px;
+        box-sizing: border-box;
+        width: 76px;
+        text-align: center;
+    }
+
+    :where(.catalogue) .card__photo .badge.bas {
+        bottom: 8px;
+        left: 8px;
+        border-radius: 2px;
+    }
+
+    :where(.catalogue) .card__texte {
+        flex: 1;
+    }
+
+    :where(.catalogue) .card__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+    }
+
+    :where(.catalogue) .card__meta p {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    :where(.catalogue) .card__meta img {
+        width: 12px;
+        height: 12px;
+    }
+
+    :where(.catalogue) .card__texte h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    :where(.catalogue) .card__bas {
+        margin-top: auto;
+        padding-top: 16px;
+    }
+
+    :where(.catalogue) .card__prix {
+        font-size: 24px;
+    }
+
+    :where(.catalogue) .card__ajout button {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    :where(.catalogue) .card__ajout button img {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* ORDINATEUR PORTABLE  >= 1024px */
+@media (min-width: 1024px) {
+    :root{
+        --gutter: 24px;
+    }
+
+    /* HERO */
+    .header-section{
+        grid-template-columns: 1.1fr 1fr;
+        column-gap: 64px;
+        padding: 40px var(--gutter);
+    }
+    
+    h1{
+        font-size: 48px;
+    }
+    .img-header{
+        height: 460px;
+    }
+    .div-h23{
+        bottom: 64px;
+    }
+    .h2-head{
+        font-size: 12px;
+    }
+    .h3-head{
+        font-size: 18px;
+    }
+    .div-h23 > p{
+        font-size: 14px;
+    }
+    .unique p{
+        font-size: 14px;
+    }
+    .div-card-head #p-head{
+        font-size: 12px;
+    }
+    .para-head{
+        font-size: 16px;
+        max-width: 560px;
+    }
+    .button-head button{
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+    .paragraphs-head div{
+        font-size: 12px;
+    }
+
+    /* STATS */
+    .card-info-section{
+        padding: 32px;
+    }
+    .card-info .number{
+        font-size: 44px;
+    }
+    .card-info .text1{
+        font-size: 18px;
+    }
+    .card-info .text2{
+        font-size: 13px;
+    }
+
+    /* EN-TÊTES */
+    .article-head .article-titre{
+        font-size: 36px;
+    }
+    .article-head .article-p{
+        font-size: 15px;
+    }
+
+    /* CARTES : 4 colonnes */
+    .cards-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .h3-texte-card{
+        font-size: 22px;
+    }
+    .card-image{
+        height: 220px;
+    }
+    .card1-texte{
+        padding: 20px 16px;
+    }
+    .price-card{
+        padding: 0 16px 16px;
+    }
+
+    /* MANIFESTE */
+    .second-card-title{
+        font-size: 24px;
+    }
+
+    /* ATELIER : image à gauche, texte à droite */
+    .atelier-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 56px var(--gutter) 0;
+    }
+    .img-atelier{
+        height: 100%;
+        border-radius: 12px 0 0 12px;
+    }
+    .atelier-image-img{
+        height: 100%;
+        min-height: 400px;
+    }
+    .text-atelier-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+        border-radius: 0 12px 12px 0;
+    }
+    .text-atelier2 p{
+        font-size: 34px;
+    }
+    .text-atelier5{
+        padding-top: 20px;
+    }
+
+    /* AVIS */
+    #makers{
+        padding: 40px var(--gutter) 56px;
+    }
+    .makers{
+        font-size: 28px;
+    }
+    .cards-makers{
+        gap: 20px;
+    }
+    .card-make{
+        padding: 20px;
+    }
+    .etoile-para{
+        font-size: 14px;
+    }
+
+    /* CTA */
+    .cta{
+        padding: 48px;
+    }
+    .cta-titre{
+        font-size: 38px;
+        max-width: 720px;
+    }
+    .cta-para{
+        font-size: 16px;
+        max-width: 620px;
+    }
+    .cta-btn1,
+    .cta-btn2{
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+    .cta-deco{
+        width: 260px;
+        height: 260px;
+        right: 56px;
+    }
+    /* PAGE SERVICES */
+    /* HEAD */
+    .second-responsive-header h1{
+        max-width: 900px;
+    }
+    .second-responsive-header .para-head{
+        max-width: 720px;
+    }
+    .part2,
+    .part3{
+        font-size: 14px;
+    }
+
+    /* SESSIONS */
+    .days-cards{
+        padding: 0 16px 16px;
+    }
+
+    /* RÉSERVATION */
+    .para-reserver{
+        font-size: 15px;
+    }
+    .reserver-place-cont .cards-makers{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* FOOTER */
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+        padding: 40px 24px 0;
+        max-width:100%;
+        margin: 0 auto;
+        
+    }
+
+    .credits {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px 24px;
+        padding: 32px 0 40px;
+    }
+
+    /* PAGE CATALOGUE */
+    /* HERO */
+    :where(.catalogue) .hero {
+        align-items: flex-end;
+    }
+
+    :where(.catalogue) .hero__description h1 {
+        font-size: 56px;
+    }
+
+    :where(.catalogue) .status {
+        padding: 0 0 20px;
+    }
+
+    :where(.catalogue) .stats {
+        flex-direction: row;
+        width: fit-content;
+        padding: 20px 24px;
+        gap: 24px;
+        text-align: left;
+    }
+
+    :where(.catalogue) .stats > span {
+        width: 1px;
+        height: 64px;
+    }
+
+    :where(.catalogue) .stats__col {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    :where(.catalogue) .stats__value {
+        font-size: 48px;
+    }
+
+    /* RECHERCHE */
+    :where(.catalogue) .recherche {
+        display: grid;
+        grid-template-columns: 280px 1fr auto;
+        align-items: center;
+        gap: 16px 24px;
+    }
+
+    :where(.catalogue) .recherche__filters {
+        flex-wrap: wrap;
+        min-width: 0;
+        overflow: visible;
+    }
+
+    :where(.catalogue) #sort {
+        flex: none;
+        width: 240px;
+    }
+
+    :where(.catalogue) .matiere {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 12px;
+    }
+
+    :where(.catalogue) .buttons-conteneeeur {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    :where(.catalogue) .buttons-conteneeeur button {
+        padding: 4px 14px;
+        background: transparent;
+        border-radius: 999px;
+    }
+
+    :where(.catalogue) .buttons-conteneeeur button.is-active {
+        background: #37583C;
+    }
+
+    :where(.catalogue) .matiere__count {
+        margin-left: auto;
+    }
+
+    :where(.catalogue) .produits {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    :where(.catalogue) .engagements__cadre {
+        flex-direction: row;
+    }
+
+    /* PAGE ARTISANS */
+    :where(main:has(.uppersection)) .uppersection {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        align-items: start;
+    }
+
+    :where(main:has(.uppersection)) .artisans-list {
+        grid-column: 1 / -1;
+        margin-top: 16px;
+        gap: 24px;
+    }
+
+    :where(main:has(.uppersection)) .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    :where(main:has(.uppersection)) .card5 {
+        grid-template-columns: 1.3fr 1fr;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    :where(main:has(.uppersection)) .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* GRAND ECRAN  >= 1280px */
+@media (min-width: 1280px) {
+    :root{
+        --gutter: 32px;
+    }
+
+    /* HERO */
+    h1{
+        font-size: 56px;
+    }
+    .img-header{
+        height: 500px;
+    }
+    .div-card-head{
+        max-width: 280px;
+    }
+    .para-head{
+        font-size: 17px;
+    }
+    .button-head button{
+        font-size: 15px;
+    }
+
+    /* STATS */
+    .card-info .number{
+        font-size: 48px;
+    }
+    .card-info .text1{
+        font-size: 20px;
+    }
+    .card-info .text2{
+        font-size: 14px;
+    }
+
+    /* EN-TÊTES */
+    .article-head .article-titre{
+        font-size: 40px;
+    }
+    .article-head .article-p{
+        font-size: 16px;
+    }
+
+    /* CARTES */
+    .cards-container{
+        gap: 24px;
+    }
+    .h3-texte-card{
+        font-size: 24px;
+    }
+    .para-card{
+        font-size: 15px;
+    }
+    .card-image{
+        height: 240px;
+    }
+    .card1-texte{
+        padding: 24px 20px;
+    }
+    .price-card{
+        padding: 0 20px 20px;
+    }
+
+    /* MANIFESTE */
+    .article-cards-second{
+        gap: 24px;
+    }
+    .card-second{
+        padding: 28px;
+    }
+    .second-card-title{
+        font-size: 26px;
+    }
+    .second-card-paragra{
+        font-size: 15px;
+    }
+
+    /* ATELIER */
+    .atelier-image-img{
+        min-height: 440px;
+    }
+    .text-atelier-div{
+        padding: 40px;
+    }
+    .text-atelier2 p{
+        font-size: 38px;
+    }
+    .text-atelier3 p{
+        font-size: 16px;
+    }
+
+    /* AVIS */
+    .makers{
+        font-size: 32px;
+    }
+    .cards-makers{
+        gap: 24px;
+    }
+    .etoile-para{
+        font-size: 15px;
+    }
+
+    /* CTA */
+    .cta{
+        padding: 56px;
+    }
+    .cta-titre{
+        font-size: 42px;
+    }
+
+    /* PAGE SERVICES */
+    /* SESSIONS */
+    .container-days-card-new{
+        gap: 24px;
+    }
+    .days-cards{
+        padding: 0 20px 20px;
+    }
+
+    /* RÉSERVATION */
+    .para-reserver{
+        font-size: 16px;
+    }
+}
+
+/* ===== FICHIER 2 ===== */
+
+/* TABLETTE  ≥ 768px*/
+@media (min-width: 768px) {
+    :root {
+        --gutter: 20px;
+        --nav-h: 76px;
+    }
+
+    /*  NAV :  */
+    .nav {
+        padding: 16px var(--gutter);
+    }
+    .burger,
+    .toggle {
+        display: none;
+    }
+    .items {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        background-color: transparent;
+    }
+    .item {
+        border-top: none;
+        padding: 8px 14px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+
+    /*  HERO  */
+    .header-section {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        column-gap: 40px;
+        align-items: start;
+        align-content: center;
+        padding: 40px var(--gutter);
+        min-height: calc(100vh - var(--nav-h));
+        min-height: calc(100svh - var(--nav-h));
+    }
+    .div-eco {
+        grid-column: 1 / -1;
+        justify-self: start;
+        width: fit-content;
+        margin: 0 0 24px;
+    }
+    h1 {
+        grid-column: 1;
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0 0 20px;
+    }
+    .header-img {
+        grid-column: 2;
+        grid-row: 2 / span 4;
+        align-self: stretch;
+        margin: 0;
+    }
+    .header-section > div:has(> .para-head),
+    .container-button,
+    .paragraphs-head {
+        grid-column: 1;
+    }
+    .img-header {
+        height: 360px;
+    }
+    .div-h23 {
+        top: auto;
+        bottom: 56px;
+        left: 5%;
+        right: 5%;
+        width: auto;
+    }
+    .h2-head {
+        font-size: 11px;
+        letter-spacing: 0.05em;
+    }
+    .h3-head {
+        font-size: 14px;
+    }
+    .div-h23 > p {
+        font-size: 12px;
+    }
+    .unique {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 2px 10px;
+    }
+    .unique p {
+        font-size: 12px;
+    }
+    .div-card-head {
+        width: fit-content;
+        max-width: 260px;
+        margin: -44px 0 0 -16px;
+    }
+    .div-card-head #p-head {
+        font-size: 11px;
+    }
+    .para-head {
+        font-size: 15px;
+        margin: 0 0 24px;
+    }
+    .container-button {
+        flex-direction: row;
+        width: auto;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    .button-head button {
+        width: auto;
+        padding: 12px 20px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    .paragraphs-head {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+    }
+    .paragraphs-head div {
+        height: auto;
+        font-size: 11px;
+    }
+
+    /*  STATS */
+    .card-info-section {
+        display: flex;
+        margin: 32px var(--gutter) 0;
+        padding: 24px;
+        border-radius: 12px;
+    }
+    .card-info {
+        flex: 1;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .card-info .number {
+        font-size: 40px;
+    }
+    .card-info .text1 {
+        font-size: 16px;
+    }
+    .card-info .text2 {
+        font-size: 12px;
+    }
+    .separation {
+        width: 1px;
+        height: auto;
+        align-self: stretch;
+    }
+
+    /*  EN-TÊTES DE SECTION  */
+    .article-head {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        align-items: end;
+        padding: 56px var(--gutter) 24px;
+    }
+    .article-head .article-h {
+        grid-column: 1;
+        font-size: 12px;
+        margin: 0 0 8px;
+    }
+    .article-head .article-titre {
+        grid-column: 1;
+        font-size: 28px;
+        margin: 0;
+    }
+    .article-head .article-p {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        font-size: 14px;
+        margin: 0;
+    }
+    body > article:nth-of-type(2) .article-p {
+        text-align: right;
+    }
+    .article-head:has(+ .article-cards-second) {
+        display: block;
+        text-align: center;
+    }
+    .article-head:has(+ .article-cards-second) .article-h {
+        color: var(--raw-terracotta-720);
+    }
+    .article-head:has(+ .article-cards-second) .article-p {
+        margin: 12px auto 0;
+        max-width: 640px;
+    }
+
+    /*  CARTES (filières + produits)*/
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0 var(--gutter) 40px;
+    }
+    .card1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .card1-texte {
+        flex: 1;
+        padding: 20px;
+    }
+    #card1-texte-head {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .card1-texte-head {
+        margin: 0;
+    }
+    .card1-texte-head .filiere {
+        font-size: 12px;
+        margin: 6px;
+    }
+    .gisement {
+        font-size: 12px;
+    }
+    .h3-texte-card {
+        font-size: 22px;
+    }
+    .para-card {
+        font-size: 14px;
+    }
+    .card-image {
+        height: 200px;
+    }
+    .bois p {
+        font-size: 12px;
+        height: 24px;
+        padding: 0 10px;
+    }
+    .bois {
+        width: auto;
+    }
+    .second-cards-text {
+        font-size: 12px;
+    }
+    .price-card {
+        justify-content: space-between;
+        padding: 0 20px 20px;
+    }
+    .price-card .price-prix {
+        font-size: 12px;
+    }
+    .taman {
+        font-size: 24px;
+    }
+    .button-price-card {
+        width: auto;
+        height: 36px;
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+    /*  MANIFESTE  */
+    .article-cards-second {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 var(--gutter) 48px;
+    }
+    .card-second {
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .text-card-second {
+        align-items: flex-start;
+    }
+    .second-card-nombre {
+        width: 40px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .second-card-title {
+        font-size: 22px;
+        text-align: left;
+        margin: 12px 0;
+    }
+    .second-card-paragra {
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+    }
+    .foot-card-second {
+        font-size: 12px;
+        margin-top: 24px;
+    }
+
+    /*  ATELIER  */
+    .atelier-cont {
+        background-color: var(--raw-green-650);
+        padding: 40px var(--gutter) 0;
+    }
+    .img-atelier {
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
+    }
+    .atelier-image-img {
+        height: 320px;
+    }
+    .img-para-atelier {
+        width: auto;
+        padding: 6px 12px;
+        font-size: 11px;
+        left: 16px;
+        top: 16px;
+    }
+    .text-atelier-div {
+        background-color: var(--raw-surface-mint);
+        padding: 24px;
+        border-radius: 0 0 12px 12px;
+    }
+    .text-atelier1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 4px 20px;
+    }
+    .p1-at-div {
+        padding: 8px 0;
+    }
+    .p1-at,
+    .p2-at,
+    .p3-at {
+        font-size: 12px;
+    }
+    .text-atelier2 p {
+        font-size: 32px;
+        text-align: left;
+    }
+    .text-atelier3 p {
+        font-size: 15px;
+    }
+    .text-atelier5 {
+        padding-bottom: 0;
+    }
+    .text-atelier5 button {
+        width: auto;
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+    /*  AVIS  */
+    #makers {
+        border-radius: 0;
+        padding: 32px var(--gutter) 48px;
+    }
+    .makers {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 24px;
+    }
+    .cards-makers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .card-make {
+        padding: 16px;
+    }
+    .etoile-para {
+        font-size: 13px;
+    }
+    .al {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+        font-size: 14px;
+    }
+    .ant-p1 {
+        font-size: 14px;
+    }
+    .ant-p2 {
+        font-size: 12px;
+    }
+
+    /* CTA  */
+    .cta {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 40px var(--gutter);
+        padding: 40px;
+        transform: none;
+        box-shadow: 0 0 0 100vmax var(--raw-green-900);
+        clip-path: inset(-40px -100vmax);
+    }
+    .cta-label {
+        order: -1;
+        flex-basis: 100%;
+        font-size: 11px;
+    }
+    .cta-titre {
+        flex-basis: 100%;
+        max-width: 640px;
+        font-size: 32px;
+    }
+    .cta-para {
+        flex-basis: 100%;
+        max-width: 560px;
+        font-size: 15px;
+    }
+    .cta-btn1,
+    .cta-btn2 {
+        padding: 12px 22px;
+        font-size: 13px;
+    }
+    .cta-deco {
+        top: 50%;
+        bottom: auto;
+        right: 32px;
+        width: 220px;
+        height: 220px;
+        transform: translateY(-50%);
+    }
+
+    /* HEAD */
+    .second-responsive-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .second-responsive-header h1 {
+        max-width: 760px;
+    }
+    .second-responsive-header .para-head {
+        max-width: 640px;
+    }
+    .filiere-parts {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+    }
+    .part1 {
+        font-size: 12px;
+        letter-spacing: 0.05em;
+    }
+    .part2,
+    .part3 {
+        font-size: 13px;
+    }
+
+    /* SESSIONS  */
+    .atelier-cont:has(.container-days-card-new) {
+        display: block;
+        background-color: transparent;
+        padding: 40px 0 0;
+    }
+    .atelier-cont:has(.container-days-card-new) > .text-atelier2,
+    .atelier-cont:has(.container-days-card-new) > .text-atelier3 {
+        padding: 0 var(--gutter);
+    }
+    .container-days-card-new {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 24px var(--gutter) 48px;
+    }
+    .container-days-card-new .card1-texte .div-eco {
+        margin: 0 0 12px;
+    }
+    .container-prix-carte {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-bottom: 12px;
+    }
+    .container-prix-carte .second-cards-text {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+    .days-cards {
+        padding: 0 20px 16px;
+    }
+    .card-days-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    .days-titre,
+    .days-conte {
+        margin: 0;
+        font-size: 12px;
+    }
+    .days-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .paragraph-card-days {
+        margin: 0;
+        font-size: 12px;
+    }
+    .container-days-card-new .price-prix {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+
+    /* RÉSERVATION SUR TABLETTE */
+    .reservation-unified-wrapper {
+        padding: 40px var(--gutter) 64px;
+        margin: 0;
+    }
+
+    .reserver-place-cont .cards-makers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    #reserve-p-un,
+    .para-reserver {
+        text-align: center;
+    }
+
+    .para-reserver {
+        max-width: 640px;
+        margin: 0 auto 28px;
+        font-size: 14px;
+    }
+
+    .booking-form-wrapper {
+        max-width: 760px;
+        margin: 32px auto 0;
+        padding: 32px;
+    }
+
+    .reservation-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    .form-group-atelier { grid-column: 1 / -1; }
+    .form-group-date { grid-column: 1; }
+    .form-group-creneau { grid-column: 2; }
+    .form-group-participants { grid-column: 1; }
+    .form-group-niveau { grid-column: 2; }
+    
+    .stepper-control { width: 100%; }
+    .stepper-value { max-width: none; }
+
+    .form-group-coords {
+        grid-column: 1 / -1;
+    }
+
+    .form-row-dual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .form-group-besoins {
+        grid-column: 1 / -1;
+    }
+
+    .checkbox-container {
+        grid-column: 1 / -1;
+    }
+
+    .estimation-summary-card {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px;
+    }
+
+    .btn-submit-booking {
+        width: auto;
+        min-width: 300px;
+        padding: 14px 28px;
+    }
+}
+
+/* ORDINATEUR PORTABLE  ≥ 1024px */
+@media (min-width: 1024px) {
+    :root {
+        --gutter: 24px;
+    }
+
+    /* HERO */
+    .header-section {
+        grid-template-columns: 1.1fr 1fr;
+        column-gap: 64px;
+        padding: 40px var(--gutter);
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .img-header {
+        height: 460px;
+    }
+    .div-h23 {
+        bottom: 64px;
+    }
+    .h2-head {
+        font-size: 12px;
+    }
+    .h3-head {
+        font-size: 18px;
+    }
+    .div-h23 > p {
+        font-size: 14px;
+    }
+    .unique p {
+        font-size: 14px;
+    }
+    .div-card-head #p-head {
+        font-size: 12px;
+    }
+    .para-head {
+        font-size: 16px;
+        max-width: 560px;
+    }
+    .button-head button {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+    .paragraphs-head div {
+        font-size: 12px;
+    }
+
+    /* STATS */
+    .card-info-section {
+        padding: 32px;
+    }
+    .card-info .number {
+        font-size: 44px;
+    }
+    .card-info .text1 {
+        font-size: 18px;
+    }
+    .card-info .text2 {
+        font-size: 13px;
+    }
+
+    /* EN-TÊTES */
+    .article-head .article-titre {
+        font-size: 36px;
+    }
+    .article-head .article-p {
+        font-size: 15px;
+    }
+
+    /* CARTES : 4 colonnes */
+    .cards-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .h3-texte-card {
+        font-size: 22px;
+    }
+    .card-image {
+        height: 220px;
+    }
+    .card1-texte {
+        padding: 20px 16px;
+    }
+    .price-card {
+        padding: 0 16px 16px;
+    }
+
+    /* MANIFESTE */
+    .second-card-title {
+        font-size: 24px;
+    }
+
+    /* ATELIER */
+    .atelier-cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 56px var(--gutter) 0;
+    }
+    .img-atelier {
+        height: 100%;
+        border-radius: 12px 0 0 12px;
+    }
+    .atelier-image-img {
+        height: 100%;
+        min-height: 400px;
+    }
+    .text-atelier-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+        border-radius: 0 12px 12px 0;
+    }
+    .text-atelier2 p {
+        font-size: 34px;
+    }
+    .text-atelier5 {
+        padding-top: 20px;
+    }
+
+    /* AVIS */
+    #makers {
+        padding: 40px var(--gutter) 56px;
+    }
+    .makers {
+        font-size: 28px;
+    }
+    .cards-makers {
+        gap: 20px;
+    }
+    .card-make {
+        padding: 20px;
+    }
+    .etoile-para {
+        font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 48px;
+    }
+    .cta-titre {
+        font-size: 38px;
+        max-width: 720px;
+    }
+    .cta-para {
+        font-size: 16px;
+        max-width: 620px;
+    }
+    .cta-btn1,
+    .cta-btn2 {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+    .cta-deco {
+        width: 260px;
+        height: 260px;
+        right: 56px;
+    }
+
+    /* HEADER and SESSIONS */
+    .second-responsive-header h1 {
+        max-width: 900px;
+    }
+    .second-responsive-header .para-head {
+        max-width: 720px;
+    }
+    .part2,
+    .part3 {
+        font-size: 14px;
+    }
+    .days-cards {
+        padding: 0 16px 16px;
+    }
+
+    /* SECTION RÉSERVATION */
+    .reservation-unified-wrapper {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        column-gap: 40px;
+        align-items: start;
+        padding: 56px var(--gutter);
+        border-radius: 8px;
+        margin: 24px var(--gutter) 48px;
+    }
+
+    .reservation-unified-wrapper #makers {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .reservation-unified-wrapper #reserve-p-un {
+        text-align: left;
+        margin: 0 0 8px;
+    }
+
+    .reservation-unified-wrapper .makers {
+        text-align: left;
+        font-size: 34px;
+        line-height: 1.15;
+        margin: 0 0 16px;
+    }
+
+    .reservation-unified-wrapper .para-reserver {
+        text-align: left;
+        margin: 0 0 24px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .reservation-unified-wrapper .cards-makers {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .reservation-unified-wrapper .card-make {
+        padding: 16px 20px;
+    }
+
+    .reservation-unified-wrapper .booking-section {
+        padding: 0;
+    }
+
+    .booking-form-wrapper {
+        margin: 0;
+        max-width: none;
+        padding: 32px 28px;
+    }
+
+    .btn-submit-booking {
+        min-width: 280px;
+        font-size: 15px;
+    }
+}
+
+/* GRAND ÉCRAN  ≥ 1280px*/
+@media (min-width: 1280px) {
+    :root {
+        --gutter: 32px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+    .img-header {
+        height: 500px;
+    }
+    .div-card-head {
+        max-width: 280px;
+    }
+    .para-head {
+        font-size: 17px;
+    }
+    .button-head button {
+        font-size: 15px;
+    }
+
+    .card-info .number {
+        font-size: 48px;
+    }
+    .card-info .text1 {
+        font-size: 20px;
+    }
+    .card-info .text2 {
+        font-size: 14px;
+    }
+
+    .article-head .article-titre {
+        font-size: 40px;
+    }
+    .article-head .article-p {
+        font-size: 16px;
+    }
+
+    .cards-container {
+        gap: 24px;
+    }
+    .h3-texte-card {
+        font-size: 24px;
+    }
+    .para-card {
+        font-size: 15px;
+    }
+    .card-image {
+        height: 240px;
+    }
+    .card1-texte {
+        padding: 24px 20px;
+    }
+    .price-card {
+        padding: 0 20px 20px;
+    }
+
+    .article-cards-second {
+        gap: 24px;
+    }
+    .card-second {
+        padding: 28px;
+    }
+    .second-card-title {
+        font-size: 26px;
+    }
+    .second-card-paragra {
+        font-size: 15px;
+    }
+
+    .atelier-image-img {
+        min-height: 440px;
+    }
+    .text-atelier-div {
+        padding: 40px;
+    }
+    .text-atelier2 p {
+        font-size: 38px;
+    }
+    .text-atelier3 p {
+        font-size: 16px;
+    }
+
+    .makers {
+        font-size: 32px;
+    }
+    .cards-makers {
+        gap: 24px;
+    }
+    .etoile-para {
+        font-size: 15px;
+    }
+
+    .cta {
+        padding: 56px;
+    }
+    .cta-titre {
+        font-size: 42px;
+    }
+
+    .container-days-card-new {
+        gap: 24px;
+    }
+    .days-cards {
+        padding: 0 20px 20px;
+    }
+
+    .reservation-unified-wrapper {
+        column-gap: 56px;
+        padding: 64px 48px;
+        max-width: 1440px;
+        margin: 32px auto 64px;
+    }
+
+    .reservation-unified-wrapper .makers {
+        font-size: 38px;
+    }
+
+    .booking-form-wrapper {
+        padding: 36px 32px;
+    }
+
+    .btn-submit-booking {
+        min-width: 320px;
+        font-size: 16px;
+    }
+}

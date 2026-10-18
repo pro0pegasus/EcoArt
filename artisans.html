@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Nos Artisans - EcoArt</title>
+</head>
+
+<body>
+     <header class="header">
+        <nav class="nav" >
+            <a href="index.html" class="logo">
+                <img src="./assets/images/Logo EcoArt.png" alt="EcoArt, retour à l'accueil">
+            </a>
+
+            <input type="checkbox" id="toggle" class="toggle" >
+            <label for="toggle" class="burger" >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="items">
+                <li><a class="item" href="index.html">Accueil</a></li>
+                <li><a class="item" href="produits.html">Catalogue</a></li>
+                <li><a class="item" href="services.html">Ateliers & Services</a></li>
+                <li><a class="item" href="artisans.html" aria-current="page">Nos Artisans</a></li>
+                <li><a class="item" href="contact.html">Impact & Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="container">
+            <div class="uppersection">
+                <div class="front-left">
+                    <div class="title">
+                        <h1>Les Mains derrière les
+                            Matières</h1>
+                        <p>Découvrez les éco-artisans du réseau EcoArt. À la croisée de l'héritage d'atelier et de la
+                            stricte
+                            valorisation des rebuts industriels, chaque geste redéfinit l'usage sans puiser de nouvelle
+                            ressource géologique ou forestière.</p>
+                    </div>
+                    <div class="choices">
+                        <ul>
+                            <li><a class="byad" href="#artisans-list">Tous les Ateliers (24)</a></li>
+                            <li><a class="byad" href="#artisan-bois">Bois de Réemploi</a></li>
+                            <li><a class="byad" href="#artisan-polymeres">Polymères & Composites</a></li>
+                            <li><a class="byad" href="#artisan-verre">Verre Cullet & Solaire</a></li>
+                            <li><a class="byad" href="#artisan-textile">Textiles Surcyclés</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="front-right">
+                    <div class="charte-top">
+                        <small>CHARTE D'EXIGENCE 2025</small>
+                        <div class="audit">
+                            <img src="assets/icons/sheald.png" alt="shield">
+                            <small>100% Audité</small>
+                        </div>
+                    </div>
+                    <p>Nos artisans souscrivent à un cahier des charges rigoureux
+                        : zéro résine toxique, traçabilité des gisements à moins de
+                        250 km, et recyclabilité complète en fin de cycle de vie.</p>
+                    <div class="percent">
+                        <div>
+                            <big>84%</big>
+                            <small>Rebuts valorisés/création</small>
+                        </div>
+                        <div>
+                            <big>4.9/5</big>
+                            <small>Indice de réparabilité</small>
+                        </div>
+                    </div>
+                    <div class="chart-line">
+                        <div class="chart-top">
+                            <small>Flux de matières détournées (Mois courant)</small>
+                            <small>18.4 tonnes</small>
+                        </div>
+                        <div class="flow-bar">
+                            <div class="box1"></div>
+                            <div class="box2"></div>
+                            <div class="box3"></div>
+                            <div class="box4"></div>
+                        </div>
+                        <ul>
+                            <li class="dot1">Bois</li>
+                            <li class="dot2">Verre</li>
+                            <li class="dot3">Textiles</li>
+                            <li class="dot4">Polymères</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="artisans-list" id="artisans-list">
+                    <div class="cards">
+                        <div class="card card1" id="artisan-bois">
+                            <div class="card-top">
+                                <div class="headcard">
+                                    <img src="assets/images/woodworker.png" alt="woodworker">
+                                    <div class="right">
+                                        <small>ÉBÉNISTE D'ART & UPCYCLING</small>
+                                        <h2>Antoine Mercier</h2>
+                                        <div class="location">
+                                            <img src="assets/icons/mapselectionicon.png" alt="selectionicon">
+                                            <span>Lyon (69) • Atelier La Fuste</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="smalltitle">
+                                    <img src="assets/icons/craduationgapicon.png" alt="graduationcap">
+                                    <span>Anime 2 ateliers / mois</span>
+                                </div>
+                            </div>
+                            <p>« Chaque poutre de déconstruction industrielle conserve la mémoire des
+                                siècles passés. Mon rôle n'est pas d'effacer les fentes et les nœuds, mais de
+                                les magnifier dans du mobilier architectural épuré. »</p>
+                            <div class="details">
+                                <div class="badge">
+                                    <img src="assets/icons/treelineicon.png" alt="treeline">
+                                    <span>Chêne sauvé (bâtis 19e)</span>
+                                </div>
+                                <div class="badge">
+                                    <img src="assets/icons/oilcontainericon.png" alt="oilcontainer">
+                                    <span>Huiles végétales biosourcées</span>
+                                </div>
+                                <div class="eco-pill">
+                                    <img src="assets/icons/leaficon.png" alt="leaficon">
+                                    <span>-128 kg CO₂ / pièce</span>
+                                </div>
+                            </div>
+                            <small class="gallery-title">CRÉATIONS SIGNATURES RÉCENTES</small>
+                            <div class="products">
+                                <a href="produits.html"><img src="assets/images/woodtable.png" alt="woodtable"></a>
+                                <a href="produits.html"><img src="assets/images/fourlegstable.png" alt="four legs table"></a>
+                                <a href="produits.html"><img src="assets/images/candles.png" alt="candles"></a>
+                            </div>
+                            <div class="card-footer">
+                                <a class="byad" href="produits.html" class="explore">
+                                    <span>Explorer ses 8 créations</span>
+                                    <img src="assets/icons/arrowicon.png" alt="arrowicon">
+                                </a>
+                                <button type="button" onclick="location.href='services.html'">
+                                    <img src="assets/icons/sechadualeicon.png" alt="scheduleicon">
+                                    Réserver son atelier
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card card2" id="artisan-verre">
+                            <div class="card-top">
+                                <div class="headcard">
+                                    <img src="assets/images/glassworker.png" alt="glassworker">
+                                    <div class="right">
+                                        <small>MAÎTRE VERRIÈRE & THERMOFORMAGE</small>
+                                        <h2>Claire Dupuis</h2>
+                                        <div class="location">
+                                            <img src="assets/icons/mapselectionicon.png" alt="selectionicon">
+                                            <span>Nantes (44) • Studio Calcin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="smalltitle">
+                                    <img src="assets/icons/craduationgapicon.png" alt="graduationcapicon">
+                                    <span>Anime 4 ateliers / mois</span>
+                                </div>
+                            </div>
+                            <p>« Le verre est infiniment réincarnable. En collectant les bouteilles d'huîtres et
+                                le calcin de verrières maraîchères de Loire-Atlantique, nous recréons des
+                                pièces aux inclusions minérales uniques au monde. »</p>
+                            <div class="details">
+                                <div class="badge">
+                                    <img src="assets/icons/sunicon.png" alt="sunicon">
+                                    <span>Four hybride solaire / biométhane</span>
+                                </div>
+                                <div class="badge">
+                                    <img src="assets/icons/waterdroopicon.png" alt="waterdropicon">
+                                    <span>Bouteilles de mer & cullet</span>
+                                </div>
+                                <div class="eco-pill">
+                                    <img src="assets/icons/leaficon.png" alt="">
+                                    <span>-3.4 kg CO₂ / carafe</span>
+                                </div>
+                            </div>
+                            <small class="gallery-title">CRÉATIONS SIGNATURES RÉCENTES</small>
+                            <div class="products">
+                                <a href="produits.html"><img src="assets/images/vase.png" alt="vase"></a>
+                                <a href="produits.html"><img src="assets/images/lightball.png" alt="lightball"></a>
+                                <a href="produits.html"><img src="assets/images/glass.png" alt="glass"></a>
+                            </div>
+                            <div class="card-footer">
+                                <a class="byad" href="produits.html" class="explore">
+                                    <span>Explorer ses 12 créations</span>
+                                    <img src="assets/icons/arrowicon.png" alt="arrowicon">
+                                </a>
+                                <button type="button" onclick="location.href='services.html'">
+                                    <img src="assets/icons/sechadualeicon.png" alt="scheduleicon">
+                                    Réserver son atelier
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card card3" id="artisan-textile">
+                            <div class="card-top">
+                                <div class="headcard">
+                                    <img src="assets/images/carpetworker.png" alt="Fatou Diallo">
+                                    <div class="right">
+                                        <small>DESIGNER TEXTILE & ZÉRO CHUTE</small>
+                                        <h2>Fatou Diallo</h2>
+                                        <div class="location">
+                                            <img src="assets/icons/mapselectionicon.png" alt="selectionicon">
+                                            <span>Lille (59) • Manufacture Trame</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="smalltitle">
+                                    <img src="assets/icons/craduationgapicon.png" alt="graduationcapicon">
+                                    <span>Anime 3 ateliers / mois</span>
+                                </div>
+                            </div>
+                            <p>« Le Nord possède un patrimoine textile exceptionnel désormais dormant.
+                                En reprenant les fins de séries de draperies et toiles de lin délaissées, nous
+                                tissons un mobilier d'assise et des tapisseries pérennes sans fil vierge. »</p>
+                            <div class="details">
+                                <div class="badge">
+                                    <img src="assets/icons/paintingicon.png" alt="paintingicon">
+                                    <span>Teintures végétales (garance, pelures)</span>
+                                </div>
+                                <div class="badge">
+                                    <img src="assets/icons/finsicon.png" alt="finsicon">
+                                    <span>Fins de séries lin & chanvre</span>
+                                </div>
+                                <div class="eco-pill">
+                                    <img src="assets/icons/leuaicon.png" alt="watericon">
+                                    <span>1 200 L d'eau épargnés</span>
+                                </div>
+                            </div>
+                            <small class="gallery-title">CRÉATIONS SIGNATURES RÉCENTES</small>
+                            <div class="products">
+                                <a href="produits.html"><img src="assets/images/tarp.png" alt="tarp"></a>
+                                <a href="produits.html"><img src="assets/images/towels.png" alt="towels"></a>
+                                <a href="produits.html"><img src="assets/images/sofa.png" alt="sofa"></a>
+                            </div>
+                            <div class="card-footer">
+                                <a class="byad" href="produits.html" class="explore">
+                                    <span>Explorer ses 15 créations</span>
+                                    <img src="assets/icons/arrowicon.png" alt="arrowicon">
+                                </a>
+                                <button type="button" onclick="location.href='services.html'">
+                                    <img src="assets/icons/sechadualeicon.png" alt="scheduleicon">
+                                    Réserver son atelier
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card card4" id="artisan-polymeres">
+                            <div class="card-top">
+                                <div class="headcard">
+                                    <img src="assets/images/ceramicsworker.png" alt="ceramicsworker">
+                                    <div class="right">
+                                        <small>ARTISAN MATIÉRISTE & POLYMÈRES</small>
+                                        <h2>Marc Leroux</h2>
+                                        <div class="location">
+                                            <img src="assets/icons/mapselectionicon.png" alt="selectionicon">
+                                            <span>Bordeaux (33) • Lab NéoMatière</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="smalltitle">
+                                    <img src="assets/icons/craduationgapicon.png" alt="graduationcapicon">
+                                    <span>Anime 2 ateliers / mois</span>
+                                </div>
+                            </div>
+                            <p>« Le plastique post-consommation possède les qualités structurelles du
+                                marbre ou du corian s'il est compressé à basse température. Nous broyons
+                                les bouchons et les filets ostréicoles locaux pour composer un terrazzo
+                                indestructible. »</p>
+                            <div class="details">
+                                <div class="badge">
+                                    <img src="assets/icons/hammericon.png" alt="hammericon">
+                                    <span>Compression thermo-mécanique</span>
+                                </div>
+                                <div class="badge">
+                                    <img src="assets/icons/recyclingicon.png" alt="recyclingicon">
+                                    <span>Polyéthylène & filets de pêche</span>
+                                </div>
+                                <div class="eco-pill">
+                                    <img src="assets/icons/leaficon.png" alt="leaficon">
+                                    <span>14 kg plastique détourné / plateau</span>
+                                </div>
+                            </div>
+                            <small class="gallery-title">CRÉATIONS SIGNATURES RÉCENTES</small>
+                            <div class="products">
+                                <a href="produits.html"><img src="assets/images/cuttingboard.png" alt="cuttingboard"></a>
+                                <a href="produits.html"><img src="assets/images/table.png" alt="table"></a>
+                                <a href="produits.html"><img src="assets/images/plants.png" alt="plants"></a>
+                            </div>
+                            <div class="card-footer">
+                                <a class="byad" href="produits.html" class="explore">
+                                    <span>Explorer ses 15 créations</span>
+                                    <img src="assets/icons/arrowicon.png" alt="arrowicon">
+                                </a>
+                                <button type="button" onclick="location.href='services.html'">
+                                    <img src="assets/icons/sechadualeicon.png" alt="scheduleicon">
+                                    Réserver son atelier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card5">
+                        <div class="card5-left">
+                            <div class="card5-label">
+                                <img src="assets/icons/mapicon.png" alt="mapicon">
+                                <span>ANCRAGE TERRITORIAL CERTIFIÉ</span>
+                            </div>
+                            <div class="card5-text">
+                                <h2>Une cartographie de circuits très
+                                    courts</h2>
+                                <p>Chaque artisan EcoArt s'engage à capter ses matières dans un rayon de 250
+                                    kilomètres autour de son atelier. Aucune expédition maritime lointaine, aucune
+                                    matière première anonyme.</p>
+                            </div>
+                            <div class="stats">
+                                <div class="stat">
+                                    <h3>24</h3>
+                                    <small>Ateliers référencés</small>
+                                </div>
+                                <div class="stat stat-peach">
+                                    <h3>100%</h3>
+                                    <small>Traçabilité</small>
+                                </div>
+                                <div class="stat">
+                                    <h3>92 km</h3>
+                                    <small>Distance gisement moyenne</small>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89077.18496034393!2d4.752723102357551!3d45.75792108390354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516ae88797%3A0x408ab2ae4bb21f0!2sLyon%2C%20France!5e0!3m2!1sen!2sma!4v1792153089295!5m2!1sen!2sma"
+                            title="Carte des ateliers EcoArt" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/Logo EcoArt.png" alt="EcoArt, créativité pour un monde durable">
+                </a>
+                <div class="index-eco">
+                    <p>Plateforme d'artisanat circulaire valorisant
+                        les rebuts nobles. Conception numérique
+                        sobre, traçabilité certifiée et réduction de
+                        l'empreinte carbone matériel.</p>
+                    <div class="tag">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.56252 14L3.42189 11.8667L1.2607 11.3333L1.47081 8.86667L0 7L1.47081 5.13333L1.2607 2.66667L3.42189 2.13333L4.56252 0L6.60365 0.966667L8.64478 0L9.78541 2.13333L11.9466 2.66667L11.7365 5.13333L13.2073 7L11.7365 8.86667L11.9466 11.3333L9.78541 11.8667L8.64478 14L6.60365 13.0333L4.56252 14ZM5.0728 12.3L6.60365 11.5667L8.16451 12.3L9.00498 10.7L10.6559 10.2667L10.5058 8.4L11.6164 7L10.5058 5.56667L10.6559 3.7L9.00498 3.3L8.13449 1.7L6.60365 2.43333L5.04279 1.7L4.20232 3.3L2.55141 3.7L2.70149 5.56667L1.59088 7L2.70149 8.4L2.55141 10.3L4.20232 10.7L5.0728 12.3ZM5.9733 9.36667L9.36517 5.6L8.52471 4.63333L5.9733 7.46667L4.68259 6.06667L3.84212 7L5.9733 9.36667Z"
+                                fill="#ECF6EE" />
+                        </svg>
+                        <span class="text">Index Éco-Index : A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="filiere-circulaire">
+                <h2>Filière Circulaire</h2>
+                <ul>
+                    <li><a  href="produits.html">Bois de réemploi &amp; chêne sauvé</a></li>
+                    <li><a  href="produits.html">Verre recyclé au four solaire</a></li>
+                    <li><a  href="produits.html">Textiles surcyclés d'ateliers</a></li>
+                    <li><a  href="produits.html">Métaux ferreux reconditionnés</a></li>
+                    <li><a  href="contact.html">Charte zéro déchet d'atelier</a></li>
+                </ul>
+            </div>
+            <div class="labels-certifications">
+                <h2>Labels &amp; Certifications</h2>
+                <ul class="labels">
+                    <li class="label-card">
+                        <a class="byad" href="contact.html">
+                            <strong>Label Upcycling Certifié UE</strong>
+                            <span>Norme traçabilité matière brute à 100%</span>
+                        </a>
+                    </li>
+                    <li class="label-card">
+                        <a class="byad" href="artisans.html">
+                            <strong>Garantie Artisans d'Art</strong>
+                            <span>Transmission et fabrication locale</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter Sobre</h2>
+                <p>Une seule édition mensuelle, sans scripts
+                    lourds ni pistage publicitaire.</p>
+                <form action="#">
+                    <input type="email" id="email" name="email" placeholder="votre.email@domaine.fr"
+                        aria-label="Votre adresse e-mail" required>
+                    <button type="submit" class="btn">S'inscrire</button>
+                </form>
+                <p class="newsletter-note">Désinscription en 1 clic. Données hébergées
+                    en France.</p>
+            </div>
+            <div class="credits">
+                <div class="credits-info">
+                    <small>© 2025 EcoArt (NextLine client). Tous droits réservés.</small>
+                    <small class="A">Hébergement vert basse consommation</small>
+                    <small class="A"><a href="tel:+33189452010">Tél : +33 (0)1 89 45 20 10</a></small>
+                </div>
+                <ul class="credits-links">
+                    <li><a  href="#">Mentions Légales</a></li>
+                    <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                    <li><a  href="#">Charte Éco-conception</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

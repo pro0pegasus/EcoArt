@@ -1,14 +1,611 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoArt</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <nav class="nav" >
+            <a href="index.html" class="logo">
+                <img src="./assets/images/Logo EcoArt.png" alt="EcoArt, retour à l'accueil">
+            </a>
+
+            <input type="checkbox" id="toggle" class="toggle" >
+            <label for="toggle" class="burger" >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="items">
+                <li><a class="item" href="index.html">Accueil</a></li>
+                <li><a class="item" href="produits.html">Catalogue</a></li>
+                <li><a class="item" href="services.html">Ateliers &amp; Services</a></li>
+                <li><a class="item" href="artisans.html">Nos Artisans</a></li>
+                <li><a class="item" href="contact.html">Impact &amp; Contact</a></li>
+            </ul>
+        </nav>
+        <section class="header-section">
+        <div class="div-eco"><img src="./assets/icons/war9a.png"><p>ECO-SCORE A+ .EMPREINTE MATERIELLE NEUTRE</p></div>
+        <h1>Donner une seconde vie aux matières, créer du beau pour demain.</h1>
+        <div class="header-img">
+            <div class="header-conteneur">
+                <img class="img-header" src="./assets/images/headerimg.png" alt="">
+                <div class="div-h23"> 
+                    <h2 class="h2-head">PIÈCE SIGNATURE DU MOIS</h2>
+                    <h3 class="h3-head">Console "Estran" • Chêne d'église & Verre
+                    cullet</h3>
+                    <hr id="line-span">
+                    <p>Façonné par l'Atelier Solstice (Nantes)</p>
+                    <div class="unique">
+                        <p>1/1 Unique</p>
+                    </div>
+                </div>
     
+            </div>
+            <div class="div-card-head">
+                <img class="icon-fleur" alt="icon" src="./assets/icons/war9akhawya.png">
+                <p class="phead">-82%</p>
+                <p id="p-head">Émissions de CO₂ par
+                rapport au neuf</p>
+            </div>
+        </div>
+        <div >
+            <p class="para-head">EcoArt relie le design contemporain à l'économie régénérative. Nous transformons les rebuts nobles — chutes de chêne séculaire, textiles dormants et verre soufflé — en objets d'exception conçus par 42 maîtres artisans.</p>
+            
+        </div>
+        <section class="container-button">
+            <div class="button-head">
+            <button class="explorer" type="button" onclick="location.href='produits.html'">Explorer le catalogue</button>
+            </div>
+            <div class="button-head">
+                <button class="participer" type="button" onclick="location.href='services.html'"><img src="./assets/icons/cle.png" alt="">Participer à un atelier</button>
+            </div>
+        </section>
+        <div class="paragraphs-head">
+            <div>
+                <img src="./assets/icons/verified.png" alt="icon"><p>Traçabilité 100% Locale</p>
+            </div>
+            <div>
+                <img src="./assets/icons/verifie.png" alt="icon"><p>Label Upcycling Métiers d'Art</p>
+            </div>
+            <div>
+                <img src="./assets/icons/recicle.png" alt="icon"><p>Circuits Courts Métropolitains</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-info-section">
+        <div class="card-info">
+            <div>
+                <img src="./assets/icons/reciclage.png" alt="icon">
+                <p class="number">14,2 t</p>
+            </div>
+            
+            <p class="text1">Matériaux revalorisés</p>
+            <p class="text2">Détournés des filières de destruction et d'enfouissement</p>
+        </div>
+        <hr class="separation">
+        <div class="card-info">
+            <div>
+                <img src="./assets/icons/contact.png" alt="icon">
+                <p class="number">42</p>
+            </div>
+            <p  class="text1">Artisans partenaires</p>
+            <p class="text2">Ébénistes, verriers, céramistes et maroquiniers labellisés</p>
+        </div>
+        <hr class="separation">
+        <div class="card-info">
+            <div>
+                <img src="./assets/icons/check.png" alt="icon">
+                <p class="number">100%</p>
+            </div>
+            <p  class="text1">Pièces uniques ou ultra-courtes séries</p>
+            <p class="text2">Chaque texture témoigne de l'histoire vivante de la matière</p>
+        </div>
+    </section>
+    </header>
+    <article>
+        <div class="article-head">
+            <h3 class="article-h">SOURCING VERTUEUX</h3>
+            <h2 class="article-titre">Les 4 Grandes Filières Circulaires</h2>
+            <p class="article-p">Chaque gisement est sauvé de l'oubli grâce à des protocoles de tri drastiques et la complicité d'usines locales responsables.</p>
+        </div>
+        <div class="cards-container">
+            <div class="card1">
+                <div class="card1-texte">
+                    <div id="card1-texte-head">
+                        <div class="card1-texte-head">
+                            <img class="icon-card" src="./assets/icons/rajaaicon1.png" alt="icon">
+                            <p class="filiere">Filière 01</p>
+                        </div>
+                        <p class="gisement">Gisement : 4,8 T</p>
+                    </div>
+                    <h3 class="h3-texte-card">Bois de Réemploi</h3>
+                    <p class="para-card">Chênes séculaires issus de
+                    déconstructions de granges
+                    normandes, chutes massives d'ateliers
+                    et palettes traitées sans chimie.</p>
+                </div>
+                <img class="card-image" src="./assets/images/rajaa1.png" alt="">
+            </div>
+            <div class="card1">
+                <div class="card1-texte">
+                    <div id="card1-texte-head">
+                        <div class="card1-texte-head">
+                            <img class="icon-card" src="./assets/icons/rajaaicon2.png" alt="icon">
+                            <p class="filiere">Filière 02</p>
+                        </div>
+                        <p class="gisement">Gisement : 3,1 T</p>
+                    </div>
+                    <h3 class="h3-texte-card">Tissus & Lin
+Surcyclés</h3>
+                    <p class="para-card">Fins de rouleaux haute couture, toiles
+de chanvre vintage et lins lavés non
+utilisés collectés auprès de filatures
+des Hauts-de-France.</p>
+                </div>
+                <img class="card-image" src="./assets/images/rajaa2.png" alt="">
+            </div>
+            <div class="card1">
+                <div class="card1-texte">
+                    <div id="card1-texte-head">
+                        <div class="card1-texte-head">
+                            <img class="icon-card" src="./assets/icons/rajaaicon3.png" alt="icon">
+                            <p class="filiere">Filière 03</p>
+                        </div>
+                        <p class="gisement">Gisement : 3,9 T</p>
+                    </div>
+                    <h3 class="h3-texte-card">Verre Fused & Soufflé</h3>
+                    <p class="para-card">Bouteilles de domaines viticoles et
+chutes de miroiterie fondues au four
+solaire pour créer des textures
+organiques bulleuses.</p>
+                </div>
+                <img class="card-image" src="./assets/images/rajaa3.png" alt="">
+            </div>
+            <div class="card1">
+                <div class="card1-texte">
+                    <div id="card1-texte-head">
+                        <div class="card1-texte-head">
+                            <img class="icon-card" src="./assets/icons/rajaaicon4.png" alt="icon">
+                            <p class="filiere">Filière 04</p>
+                        </div>
+                        <p class="gisement">Gisement : 2,4 T</p>
+                    </div>
+                    <h3 class="h3-texte-card">Plastique Terrazzo</h3>
+                    <p class="para-card">Bouchons PEHD et bouteilles
+collectés en circuits scolaires puis
+thermocompressés pour façonner des
+plateaux ultra-résistants et marbrés.</p>
+                </div>
+                <img class="card-image" src="./assets/images/rajaa4.png" alt="">
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="article-head">
+            <h3 class="article-h">CRÉATIONS RÉVÉLÉES</h3>
+            <h2 class="article-titre">Nouveautés &
+ Coups de Cœur</h2>
+            <p class="article-p"><a href="produits.html">Consulter toutes les pièces</a></p>
+        </div>
+        <div class="cards-container">
+            <div class="card1">
+                <div>
+                    <div class="bois-container">
+                        <div class="bois  bois1">
+                        <p>Bois & Lin</p>
+                        </div>
+                        <div class="bois bois2">
+                            <p>-4,2 kg CO₂</p>
+                        </div>
+                    </div>
+                    <img class="card-image second-cards" src="./assets/images/rajaa5.png" alt="">
+                </div>
+                <div class="card1-texte">
+                    <p class="second-cards-text">Atelier Lumina • Rennes</p>
+                    <h3 class="h3-texte-card">Lampe d'Appoint "Sillon"</h3>
+                    <p class="para-card">Socle façonné dans une poutre de
+grange bretonne de 1890 et câble textile</p>
+                        <hr class="price-line-card">
+                </div>
+                <div class="price-card">
+                    <div class="price-somme">
+                        <p class="price-prix">Prix atelier</p>
+                        <p class="taman">145 €</p>
+                    </div>
+                    <button class="button-price-card" onclick="location.href='produits.html'">
+                        <img alt="icon" src="./assets/icons/second1.png">Ajouter
+                    </button>
+                </div>
+            </div>
+            <div class="card1">
+                <div>
+                    <div class="bois-container">
+                        <div class="bois  bois1">
+                        <p>Verre Cullet</p>
+                        </div>
+                        <div class="bois bois2">
+                            <p>-6,8 kg CO₂</p>
+                        </div>
+                    </div>
+                    <img class="card-image second-cards" src="./assets/images/rajaa6.png" alt="">
+                </div>
+                <div class="card1-texte">
+                    <p class="second-cards-text">Verrerie d'Éden • Biot</p>
+                    <h3 class="h3-texte-card">Soliflore "Ondée"</h3>
+                    <p class="para-card">Bouteilles champenoises fondues au
+four électrique alimenté par…</p>
+                        <hr class="price-line-card">
+                </div>
+                <div class="price-card">
+                    <div class="price-somme">
+                        <p class="price-prix">Prix atelier</p>
+                        <p class="taman">68 €</p>
+                    </div>
+                    <button class="button-price-card" onclick="location.href='produits.html'">
+                        <img alt="icon" src="./assets/icons/second1.png">Ajouter
+                    </button>
+                </div>
+            </div>
+            <div class="card1">
+                <div>
+                    <div class="bois-container">
+                        <div class="bois  bois1">
+                        <p>Plastique PEHD</p>
+                        </div>
+                        <div class="bois bois2">
+                            <p>-3,1 kg CO₂</p>
+                        </div>
+                    </div>
+                    <img class="card-image second-cards" src="./assets/images/rajaa7.png" alt="">
+                </div>
+                <div class="card1-texte">
+                    <p class="second-cards-text">Atelier Re-Form • Lyon</p>
+                    <h3 class="h3-texte-card">Plateau "Granulat"</h3>
+                    <p class="para-card">Élaboré à partir de 240 bouchons
+collectés par une association sportive…</p>
+                        <hr class="price-line-card">
+                </div>
+                <div class="price-card">
+                    <div class="price-somme">
+                        <p class="price-prix">Prix atelier</p>
+                        <p class="taman">82 €</p>
+                    </div>
+                    <button class="button-price-card" onclick="location.href='produits.html'">
+                        <img alt="icon" src="./assets/icons/second1.png">Ajouter
+                    </button>
+                </div>
+            </div>
+            <div class="card1">
+                <div>
+                    <div class="bois-container">
+                        <div class="bois  bois1">
+                        <p>Voile & Cuir</p>
+                        </div>
+                        <div class="bois bois2">
+                            <p>-5,5 kg CO₂</p>
+                        </div>
+                    </div>
+                    <img class="card-image second-cards" src="./assets/images/sac.png" alt="">
+                </div>
+                <div class="card1-texte">
+                    <p class="second-cards-text">Voilerie Sauvée • Lorient</p>
+                    <h3 class="h3-texte-card">Cabas "Alizé 04"</h3>
+                    <p class="para-card">Spinnaker de régate réformé assemblé à
+des chutes de sellerie équestre…</p>
+                        <hr class="price-line-card">
+                </div>
+                <div class="price-card">
+                    <div class="price-somme">
+                        <p class="price-prix">Prix atelier</p>
+                        <p class="taman">115 €</p>
+                    </div>
+                    <button class="button-price-card" onclick="location.href='produits.html'">
+                        <img alt="icon" src="./assets/icons/second1.png">Ajouter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section>
+        <div class="article-head">
+            <h3 class="article-h">MANIFESTE VIVANT</h3>
+            <h2 class="article-titre">Une Éthique 
+Sans Concession</h2>
+            <p class="article-p">Nous redéfinissons le luxe contemporain :
+ la valeur d'un objet ne réside pas dans l'extraction
+de nouvelles ressources mais dans la
+dignité de sa transformation.</p>
+        </div>
+        <article class="article-cards-second">
+            <div class="card-second">
+                <div class="text-card-second">
+                    <div class="second-nombre-cont">
+                        <p class="second-card-nombre">01</p>
+                    </div>
+                    <p class="second-card-title">Collecte Locale & Traçable</p>
+                    <p class="second-card-paragra">100% de nos matières sont sourcées à moins
+de 250 km des ateliers. Un passeport
+numérique infalsifiable retrace le bâtiment
+d'origine de votre meuble ou l'histoire du tissu surcyclé.</p>
+                </div>
+                <div class="foot-card-second">
+                    <img src="./assets/icons/passport.png" alt="icon">
+                    <p>Passeport matière inclus</p>
+                </div>
+            </div>
+            <div class="card-second">
+                <div class="text-card-second">
+                    <div class="second-nombre-cont">
+                        <p class="second-card-nombre">03</p>
+                    </div>
+                    <p class="second-card-title">Zéro Déchet & Éco-
+Durabilité</p>
+                    <p class="second-card-paragra">Dans nos ateliers partenaires, rien ne se perd :
+les sciures réchauffent les séchoirs, les micro-
+chutes de cuir deviennent poignées et les
+emballages sont tous réutilisables en boucle
+consigne.</p>
+                </div>
+                <div class="foot-card-second">
+                    <img src="./assets/icons/infini.png" alt="icon">
+                    <p>Boucle fermée certifiée</p>
+                </div>
+            </div>
+            <div class="card-second">
+                <div class="text-card-second">
+                    <div class="second-nombre-cont">
+                        <p class="second-card-nombre">02</p>
+                    </div>
+                    <p class="second-card-title">Savoir-Faire d'Exception</p>
+                    <p class="second-card-paragra">Sublimer la patine du temps exige une
+virtuosité technique supérieure au neuf. Nos
+artisans conjuguent gestes ancestraux des
+Compagnons et technologies de découpe
+douce.</p>
+                </div>
+                <div class="foot-card-second">
+                    <img src="./assets/icons/njma.png" alt="icon">
+                    <p>Membres Métiers d'Art</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="atelier-cont">
+        <div class="img-atelier">
+            <img class="atelier-image-img" src="./assets/images/rajaa9.png" alt="">
+            <p class="img-para-atelier">ATELIER COUP DE CŒUR • SAMEDI PROCHAIN</p>
+        </div>
+        <div class="text-atelier-div">
+            <div class="text-atelier1">
+                <div class="p1-at-div">
+                    <img src="./assets/icons/place.png" alt="icon">
+                    <p class="p1-at">Bordeaux (Quartier Bacalan)</p>
+                </div>
+                <div class="p1-at-div">
+                    <img src="./assets/icons/time.png" alt="icon">
+                    <p class="p2-at">3h30 d'initiation</p>
+                </div>
+                <div class="p1-at-div">
+                    <img src="./assets/icons/person.png" alt="icon">
+                    <p class="p3-at">4 places restantes</p>
+                </div>
+            </div>
+            <div class="text-atelier2">
+                <p>Atelier : Façonnez votre 
+plateau en Terrazzo 
+Écologique</p>
+            </div>
+            <div class="text-atelier3">
+                <p>Rejoignez Claire, artisane-designer, pour transformer vous-même 500g de
+chutes plastiques et liège naturel en un superbe centre de table aux
+finitions marbrées. Repartez le jour même avec votre création polie et
+étiquetée.</p>
+            </div>
+            <div class="text-atelier4">
+                <p>CE QUE COMPREND LA SESSION :</p>
+                <div>
+                    <img src="./assets/icons/Container.png" alt="">
+                    <p>Matières premières upcyclées et outillage individuel fourni</p>
+                </div>
+                <div>
+                    <img src="./assets/icons/Container.png" alt="">
+                    <p>Transmission des règles du thermomoulage à basse consommation</p>
+                </div>
+                <div>
+                    <img src="./assets/icons/Container.png" alt="">
+                    <p>Pause thé bio & échange sur l'économie circulaire locale</p>
+                </div>
+            </div>
+            <div class="text-atelier5">
+                <div class="at5-division">
+                    <p class="at5-division-p">85 €</p>
+                    <p class="at5-division-p2">/ participant</p>
+                </div>
+                <button type="button" onclick="location.href='services.html'">
+                    <img src="./assets/icons/reserv.png" alt="icon">
+                    <p>Réserver mon créneau</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="makers">
+        <p class="makers">
+            Ce que disent nos
+collectionneurs et makers
+        </p>
+        <div class="cards-makers">
+            <div class="card-make">
+                <div class="etoile-div">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                </div>
+                <p class="etoile-para">
+                    « J'ai commandé la table basse en chêne de
+charpente. Le QR code m'a appris qu'elle venait d'une
+halle marchande du XIXe siècle à 30 km de chez moi.
+C'est du véritable luxe porteur de sens. »
+                </p>
+                <div class="etoile-foot">
+                    <p class="al">AL</p>
+                    <div class="antoine">
+                        <p class="ant-p1">Antoine L.</p>
+                        <p class="ant-p2">Architecte d'intérieur • Lyon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-make">
+                <div class="etoile-div">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                </div>
+                <p class="etoile-para">
+                    « L'atelier de soufflage de verre recyclé
+était magique.
+On comprend la valeur du geste et on
+ne regarde plus
+jamais une bouteille de la même
+manière. Expérience
+humainement inoubliable ! »
+                </p>
+                <div class="etoile-foot">
+                    <p class="al al2">CM</p>
+                    <div class="antoine">
+                        <p class="ant-p1">Chloé M.</p>
+                        <p class="ant-p2">Participante atelier • Nantes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-make">
+                <div class="etoile-div">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                    <img src="./assets/icons/najm.png" alt="icon">
+                </div>
+                <p class="etoile-para">
+                    « En tant qu'artisan maroquinier,
+EcoArt m'a permis
+d'écouler toutes mes chutes de sellerie
+noble auprès
+d'un public qui apprécie l'authenticité
+plutôt que la
+production de masse. »
+                </p>
+                <div class="etoile-foot">
+                    <p class="al al3">MB</p>
+                    <div class="antoine">
+                        <p class="ant-p1">Maxime B.</p>
+                        <p class="ant-p2">Artisan Maroquinier certifié</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <img class="cta-deco" src="./assets/icons/Icon (14).png" alt="">
+        <h2 class="cta-titre">Prêt à transformer votre intérieur avec des pièces chargées d'histoire ?</h2>
+        <p class="cta-para">Rejoignez notre communauté de plus de 3 500 passionnés de design durable. Explorez des créations numérotées ou privatisez un atelier pour vos équipes.</p>
+        <p class="cta-label">MOUVEMENT CIRCULAIRE</p>
+        <div class="buttons-cont">
+            <button class="cta-btn1" type="button" onclick="location.href='produits.html'">Découvrir les pièces disponibles</button>
+        <button class="cta-btn2" type="button" onclick="location.href='contact.html'">Nous proposer un gisement matière</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/Logo EcoArt.png" alt="EcoArt, créativité pour un monde durable">
+                </a>
+                <div class="index-eco">
+                    <p>Plateforme d'artisanat circulaire valorisant
+                        les rebuts nobles. Conception numérique
+                        sobre, traçabilité certifiée et réduction de
+                        l'empreinte carbone matériel.</p>
+                    <div class="tag">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.56252 14L3.42189 11.8667L1.2607 11.3333L1.47081 8.86667L0 7L1.47081 5.13333L1.2607 2.66667L3.42189 2.13333L4.56252 0L6.60365 0.966667L8.64478 0L9.78541 2.13333L11.9466 2.66667L11.7365 5.13333L13.2073 7L11.7365 8.86667L11.9466 11.3333L9.78541 11.8667L8.64478 14L6.60365 13.0333L4.56252 14ZM5.0728 12.3L6.60365 11.5667L8.16451 12.3L9.00498 10.7L10.6559 10.2667L10.5058 8.4L11.6164 7L10.5058 5.56667L10.6559 3.7L9.00498 3.3L8.13449 1.7L6.60365 2.43333L5.04279 1.7L4.20232 3.3L2.55141 3.7L2.70149 5.56667L1.59088 7L2.70149 8.4L2.55141 10.3L4.20232 10.7L5.0728 12.3ZM5.9733 9.36667L9.36517 5.6L8.52471 4.63333L5.9733 7.46667L4.68259 6.06667L3.84212 7L5.9733 9.36667Z"
+                                fill="#ECF6EE" />
+                        </svg>
+                        <span class="text">Index Éco-Index : A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="filiere-circulaire">
+                <h2>Filière Circulaire</h2>
+                <ul>
+                    <li><a  href="produits.html">Bois de réemploi &amp; chêne sauvé</a></li>
+                    <li><a  href="produits.html">Verre recyclé au four solaire</a></li>
+                    <li><a  href="produits.html">Textiles surcyclés d'ateliers</a></li>
+                    <li><a  href="produits.html">Métaux ferreux reconditionnés</a></li>
+                    <li><a  href="contact.html">Charte zéro déchet d'atelier</a></li>
+                </ul>
+            </div>
+            <div class="labels-certifications">
+                <h2>Labels &amp; Certifications</h2>
+                <ul class="labels">
+                    <li class="label-card">
+                        <a class="byad" href="contact.html">
+                            <strong>Label Upcycling Certifié UE</strong>
+                            <span>Norme traçabilité matière brute à 100%</span>
+                        </a>
+                    </li>
+                    <li class="label-card">
+                        <a class="byad" href="artisans.html">
+                            <strong>Garantie Artisans d'Art</strong>
+                            <span>Transmission et fabrication locale</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter Sobre</h2>
+                <p>Une seule édition mensuelle, sans scripts
+                    lourds ni pistage publicitaire.</p>
+                <form action="#">
+                    <input type="email" id="email" name="email" placeholder="votre.email@domaine.fr"
+                        aria-label="Votre adresse e-mail" required>
+                    <button type="submit" class="btn">S'inscrire</button>
+                </form>
+                <p class="newsletter-note">Désinscription en 1 clic. Données hébergées
+                    en France.</p>
+            </div>
+            <div class="credits">
+                <div class="credits-info">
+                    <small>© 2025 EcoArt (NextLine client). Tous droits réservés.</small>
+                    <small class="A">Hébergement vert basse consommation</small>
+                    <small class="A"><a href="tel:+33189452010">Tél : +33 (0)1 89 45 20 10</a></small>
+                </div>
+                <ul class="credits-links">
+                    <li><a  href="#">Mentions Légales</a></li>
+                    <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                    <li><a  href="#">Charte Éco-conception</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
