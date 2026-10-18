@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoArt - Catalogue</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+
+<header class="header">
+        <nav class="nav" >
+            <a href="index.html" class="logo">
+                <img src="./assets/images/Logo EcoArt.png" alt="EcoArt, retour à l'accueil">
+            </a>
+
+            <input type="checkbox" id="toggle" class="toggle" >
+            <label for="toggle" class="burger" >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="items">
+                <li><a class="item" href="index.html">Accueil</a></li>
+                <li><a class="item" href="produits.html" aria-current="page">Catalogue</a></li>
+                <li><a class="item" href="services.html">Ateliers & Services</a></li>
+                <li><a class="item" href="artisans.html">Nos Artisans</a></li>
+                <li><a class="item" href="contact.html">Impact & Contact</a></li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+<section class="catalogue">
+
+<div class="trust-bar">
+
+  <div class="trust-bar__title">
+    <img src="assets/icons/Recycler.png" alt="Recycler icon">
+    <p>Traçabilité matière 100% vérifiée</p>
+    <p>Chaque objet détourne des déchets nobles des filières d'enfouissement.</p>
+  </div>
+
+  <div class="trust-bar__content">
+    <img src="assets/icons/Laivrison.png" alt="Laivrison">
+    <p>Livraison ferroviaire &amp; routière compensée</p>
+    <p>Emballages 100% amidon de maïs compostable</p>
+  </div>
+
+</div>
+
+  <div class="hero">
+
+    <div class="hero__description">
+      <h1>Catalogue d'objets upcyclés &amp; pièces uniques</h1>
+      
+      <div class="red">
+      <div class="dot"></div>
+      <h2 class="hero__tag">FILIÈRE D'ÉCO-CONCEPTION FRANÇAISE</h2>
+      </div>
+
+      <p>Des rebuts nobles réinventés en art de vivre durable. Chaque pièce est manufacturée à la main en série très limitée, traçable jusqu'au gisement source.</p>
+    
+    </div>
+    
+    <div class="status">
+      <div class="stats">
+      
+       <div class="stats__col">
+        <p class="stats__label">MATIÈRE DÉTOURNÉE</p>
+        <p class="stats__value">14.8<span>t</span></p>
+        <p class="stats__note">Depuis janvier 2025</p>
+       </div>
+          <span>|</span>
+       <div class="stats__col">
+        <p class="stats__label">ÉMISSIONS ÉVITÉES</p>
+        <p class="stats__value">-32.4<span>t</span></p>
+        <p class="stats__note">Équivalent CO₂ eq</p>
+       </div>
+
+    </div>
+   </div>
+  
+  </div>
+
+  <div class="recherche">
+
+    <div class="recherche__title">
+      <img src="assets/icons/recherche.png" alt="recherche">
+      <input type="text" id="search" placeholder="Rechercher bois, carafe, chêne, lin…" aria-label="Rechercher un produit">
+    </div>
+
+    <div class="recherche__filters">
+      <p>ESPACES :</p>
+      <a href="#produits" class="filter-button is-active">Tous</a>
+      <a href="#salon" class="filter-button">Salon</a>
+      <a href="#art-de-la-table" class="filter-button">Art de la table</a>
+      <a href="#luminaire" class="filter-button">Luminaire</a>
+      <a href="#decoration" class="filter-button">Décoration</a>
+      <a href="#mobilier" class="filter-button">Mobilier</a>
+    </div>
+
+    <div class="recherche__sort">
+      <label for="sort">TRIER :</label>
+      <select id="sort" onchange="location.hash = this.selectedOptions[0].dataset.target">
+        <option value="new" data-target="produits">Nouveautés d'atelier</option>
+        <option value="toutes" data-target="produits">Toutes les matières</option>
+        <option value="bois" data-target="luminaire">Bois revalorisé</option>
+        <option value="tissus" data-target="salon">Tissus &amp; Textiles</option>
+        <option value="verre" data-target="art-de-la-table">Verre surcyclé</option>
+        <option value="plastiques" data-target="mobilier">Plastiques techniques</option>
+      </select>
+    </div>
+
+    <div class="matiere">
+      <p class="pppp">MATIÈRE REVALORISÉE :</p>
+      <div class="buttons-conteneeeur">
+        <button type="button" onclick="location.href='#produits'" class="is-active">
+         <i  class="fa-solid fa-infinity" style="color: rgb(37, 80, 30);"></i>
+          Toutes les matières</button>
+        <button type="button" onclick="location.href='#luminaire'">
+          <i class="fa-solid fa-tree" style="color: rgb(107, 55, 20);"></i>
+          Bois revalorisé</button>
+        <button type="button" onclick="location.href='#salon'">
+          <img class="icon_seul" src="assets/icons/tissus.png" alt="tissus">
+          Tissus &amp; Textiles</button>
+        <button type="button" onclick="location.href='#art-de-la-table'">
+          <img class="icon_seul" src="assets/icons/verre.png" alt="verre">
+          Verre surcyclé</button>
+        <button type="button" onclick="location.href='#mobilier'">
+           <img class="icon_seul"  src="assets/icons/plastiques.png" alt="plastiques">
+           Plastiques techniques</button>
+        </div>
+      <p class="matiere__count">8 pièces uniques disponibles</p>
+    </div>
+
+  </div>
+
+  <div class="produits" id="produits">
+
+    <article class="card" id="art-de-la-table">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/Bouteilles.png" alt="Carafe Écume Brute en bouteilles de vin recyclées">
+        <span class="badge haut">
+          <img src="assets/icons/verre.png" alt="verre">
+          100% Bouteilles de vin recyclées</span>
+        <span class="badge droite">-4.2 kg CO₂</span>
+        <span class="badge bas">Série numérotée • 12 ex.</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">ART DE LA TABLE</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-verre">Atelier SolVerre (Lyon)</a></p>
+        </div>
+        <h3>Carafe Écume Brute</h3>
+        <p>Fondue au four solaire basse température à partir de verre cullet…</p>
+        <div class="card__bas">
+          <p class="card__prix">48 € <small>TVA incluse</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="salon">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/SALON.png" alt="Coussin Géométrique Parcelle">
+        <span class="badge haut">
+          <img src="assets/icons/tissus.png" alt="tissus">
+          Chutes de Lin Normand</span>
+        <span class="badge droite">-3.1 kg CO₂</span>
+        <span class="badge bas">Pièce Unique (#47)</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">SALON</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-textile">Tissage Re-Vie (Roubaix)</a></p>
+        </div>
+        <h3>Coussin Géométrique 'Parcelle'</h3>
+        <p>Assemblage minutieux de surplus de filatures françaises et rembourrage en…</p>
+        <div class="card__bas">
+          <p class="card__prix">55 € <small>Fait main 100%</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="mobilier">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/MOBILIER.png" alt="Assise Terrazzo Estran">
+        <span class="badge haut">
+          <img src="assets/icons/Recycler.png" alt="Recycler icon">
+          100% Déchets Plastiques Marins</span>
+        <span class="badge droite">-12.4 kg CO₂</span>
+        <span class="badge bas">Série Éditeur • 8 ex.</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">MOBILIER</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-polymeres">Plastik Lab (Brest)</a></p>
+        </div>
+        <h3>Assise Terrazzo 'Estran'</h3>
+        <p>Thermo-pressage sans colle de bouchons et filets de pêche récupérés…</p>
+        <div class="card__bas">
+          <p class="card__prix">180 € <small>Inaltérable &amp; lavable</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="luminaire">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/Lamp.png" alt="Lampe d'ambiance Bille de Chêne">
+        <span class="badge haut">
+          <img src="assets/icons/bois.png" alt="bois">
+          95% Chêne de charpente sauvé</span>
+        <span class="badge droite">-8.9 kg CO₂</span>
+        <span class="badge bas">Plus que 2 exemplaires</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">LUMINAIRE</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-bois">Marc Verdier (Morvan)</a></p>
+        </div>
+        <h3>Lampe d'ambiance 'Bille de Chêne'</h3>
+        <p>Poutre centenaire démontée d'une grange agricole, brossée à l'huile…</p>
+        <div class="card__bas">
+          <p class="card__prix">135 € <small>Garantie 5 ans</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" id="decoration">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/Soliflore.png" alt="Soliflore Organique Goutte">
+        <span class="badge haut">
+          <img src="assets/icons/bois.png" alt="bois">
+          100% Bocaux &amp; Verre Cullet</span>
+        <span class="badge droite">-5.0 kg CO₂</span>
+        <span class="badge bas">Pièce Unique (#12)</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">DÉCORATION</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-verre">Verrerie d'Anjou</a></p>
+        </div>
+        <h3>Soliflore Organique 'Goutte'</h3>
+        <p>Façonné à la canne traditionnelle sans moule industriel, chaque reflet est le…</p>
+        <div class="card__bas">
+          <p class="card__prix">62 € <small>Signature pyrogravée</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/Planche.png" alt="Planche d'apparat Mosaïque">
+        <span class="badge haut">
+          <img src="assets/icons/bois.png" alt="bois">
+          Chutes d'Ébénisterie Locale</span>
+        <span class="badge droite">-6.3 kg CO₂</span>
+        <span class="badge bas">Édition limitée • 15 ex.</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">ART DE LA TABLE</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-bois">Atelier Copeaux (Jura)</a></p>
+        </div>
+        <h3>Planche d'Apparat 'Mosaïque'</h3>
+        <p>Chutes nobles de fabrication de meubles haut de gamme assemblées en…</p>
+        <div class="card__bas">
+          <p class="card__prix">72 € <small>Finition cire d'abeille bio</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/DÉCORATION.png" alt="Coupe Vide-Poche Sillage">
+        <span class="badge haut">
+          <img src="assets/icons/Recycler.png" alt="Recycler icon">
+          100% Flacons HDPE Ménagers</span>
+        <span class="badge droite">-2.8 kg CO₂</span>
+        <span class="badge bas">Stock : 6 ex.</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">DÉCORATION</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-polymeres">Studio Cycle (Nantes)</a></p>
+        </div>
+        <h3>Coupe Vide-Poche 'Sillage'</h3>
+        <p>Chaque pièce arbore des marbrures aléatoires et uniques résultant de la…</p>
+        <div class="card__bas">
+          <p class="card__prix">34 € <small>Résistant à l'eau</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__photo">
+        <img class="phtophoto" src="assets/images/LUMINAIRE.png" alt="Suspension Cocon Grand Large">
+        <span class="badge haut">
+          <img src="assets/icons/tissus.png" alt="tissus">
+          Voiles de Bateaux Surcyclées</span>
+        <span class="badge droite">-7.5 kg CO₂</span>
+        <span class="badge bas">Dernière pièce disponible</span>
+      </div>
+      <div class="card__texte">
+        <div class="card__meta">
+          <p class="card__infos">LUMINAIRE</p>
+          <p>
+            <img src="assets/icons/check.png" alt="check">
+            <a class="byad" href="artisans.html#artisan-textile">Atelier Vent Debout (Lorient)</a></p>
+        </div>
+        <h3>Suspension Cocon 'Grand Large'</h3>
+        <p>Toiles de dacron régatées collectées en Bretagne, lavées à l'eau de pluie et…</p>
+        <div class="card__bas">
+          <p class="card__prix">110 € <small>Câble textile lin 2m inclus</small></p>
+          <div class="card__ajout">
+            <button type="button">
+              <img src="assets/icons/Ajouter.png" alt="Ajouter">
+              Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  
+
+<div class="pagination">
+  <span class="pagination__info">Affichage de 1 à 8 sur 24 créations disponibles</span>
+<div class="page-numbers">
+  <a href="#produits" class="pagination__fleche" aria-label="Page précédente">&lsaquo;</a>
+  <a href="#produits" class="pagination__page-is-active" aria-current="page">1</a>
+  <a href="#produits" class="pagination__page">2</a>
+  <a href="#produits" class="pagination__page">3</a>
+  <a href="#produits" class="pagination__fleche" aria-label="Page suivante">&rsaquo;</a>
+</div>
+  <span class="pagination__total">Page 1 sur 3</span>
+</div>
+
+<section class="engagements">
+  <div class="engagements__cadre">
+
+    <article class="engagement">
+
+      <div class="engagement__icone">
+        <img src="assets/icons/feuille.png" alt="feuille d'arbre">
+      </div>
+      
+      <div class="engagement__texte">
+        <h3>Emballage Zéro Plastique</h3>
+        <p>Calage en copeaux de bois d'atelier non traité et sachets d'amidon de maïs 100% compostables à domicile.</p>
+      </div>
+
+    </article>
+
+    <article class="engagement">
+
+      <div class="engagement__icone engagement__icone--brun">
+        <img src="assets/icons/train.png" alt="train">
+      </div>
+      <div class="engagement__texte">
+
+        <h3>Fret Éco-Responsable</h3>
+        <p>Expéditions groupées bi-hebdomadaires privilégiant le rail et la livraison finale en vélo-cargo.</p>
+      
+      </div>
+    </article>
+
+    <article class="engagement">
+      
+      <div class="engagement__icone">
+        <img src="assets/icons/passeport.png" alt="">
+      </div>
+
+      <div class="engagement__texte">
+        <h3>Passeport Numérique</h3>
+        <p>Chaque pièce inclut un certificat de provenance horodaté détaillant le site exact de valorisation du matériau.</p>
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+</section>
+</main>
+<footer>
+        <div class="container">
+            <div class="brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/Logo EcoArt.png" alt="EcoArt, créativité pour un monde durable">
+                </a>
+                <div class="index-eco">
+                    <p>Plateforme d'artisanat circulaire valorisant
+                        les rebuts nobles. Conception numérique
+                        sobre, traçabilité certifiée et réduction de
+                        l'empreinte carbone matériel.</p>
+                    <div class="tag">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.56252 14L3.42189 11.8667L1.2607 11.3333L1.47081 8.86667L0 7L1.47081 5.13333L1.2607 2.66667L3.42189 2.13333L4.56252 0L6.60365 0.966667L8.64478 0L9.78541 2.13333L11.9466 2.66667L11.7365 5.13333L13.2073 7L11.7365 8.86667L11.9466 11.3333L9.78541 11.8667L8.64478 14L6.60365 13.0333L4.56252 14ZM5.0728 12.3L6.60365 11.5667L8.16451 12.3L9.00498 10.7L10.6559 10.2667L10.5058 8.4L11.6164 7L10.5058 5.56667L10.6559 3.7L9.00498 3.3L8.13449 1.7L6.60365 2.43333L5.04279 1.7L4.20232 3.3L2.55141 3.7L2.70149 5.56667L1.59088 7L2.70149 8.4L2.55141 10.3L4.20232 10.7L5.0728 12.3ZM5.9733 9.36667L9.36517 5.6L8.52471 4.63333L5.9733 7.46667L4.68259 6.06667L3.84212 7L5.9733 9.36667Z"
+                                fill="#ECF6EE" />
+                        </svg>
+                        <span class="text">Index Éco-Index : A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="filiere-circulaire">
+                <h2>Filière Circulaire</h2>
+                <ul>
+                    <li><a  href="produits.html">Bois de réemploi &amp; chêne sauvé</a></li>
+                    <li><a  href="produits.html">Verre recyclé au four solaire</a></li>
+                    <li><a  href="produits.html">Textiles surcyclés d'ateliers</a></li>
+                    <li><a  href="produits.html">Métaux ferreux reconditionnés</a></li>
+                    <li><a  href="contact.html">Charte zéro déchet d'atelier</a></li>
+                </ul>
+            </div>
+            <div class="labels-certifications">
+                <h2>Labels &amp; Certifications</h2>
+                <ul class="labels">
+                    <li class="label-card">
+                        <a class="byad" href="contact.html">
+                            <strong>Label Upcycling Certifié UE</strong>
+                            <span>Norme traçabilité matière brute à 100%</span>
+                        </a>
+                    </li>
+                    <li class="label-card">
+                        <a class="byad" href="artisans.html">
+                            <strong>Garantie Artisans d'Art</strong>
+                            <span>Transmission et fabrication locale</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter Sobre</h2>
+                <p>Une seule édition mensuelle, sans scripts
+                    lourds ni pistage publicitaire.</p>
+                <form action="#">
+                    <input type="email" id="email" name="email" placeholder="votre.email@domaine.fr"
+                        aria-label="Votre adresse e-mail" required>
+                    <button type="submit" class="btn">S'inscrire</button>
+                </form>
+                <p class="newsletter-note">Désinscription en 1 clic. Données hébergées
+                    en France.</p>
+            </div>
+            <div class="credits">
+                <div class="credits-info">
+                    <small>© 2025 EcoArt (NextLine client). Tous droits réservés.</small>
+                    <small class="A">Hébergement vert basse consommation</small>
+                    <small class="A"><a href="tel:+33189452010">Tél : +33 (0)1 89 45 20 10</a></small>
+                </div>
+                <ul class="credits-links">
+                    <li><a  href="#">Mentions Légales</a></li>
+                    <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                    <li><a  href="#">Charte Éco-conception</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
