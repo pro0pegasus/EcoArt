@@ -1,0 +1,25 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #F2FCF4;
+}
+nav, #plus, #Evitement, #Filiere, #Social, #u1, #v2, #u3, #v4 {
+    background-color: #F2FCF4;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.Live-Calculation, .Metric-1, .Metric-2, .Metric-3, .Metric-4 {
+    background-color: #335238;
+}
+
+#v1, #IcM1, #u2, #IcM2, #v3, #IcM3, #u4, #IcM4 {
+    background-color: #FFE2D6;
+}
