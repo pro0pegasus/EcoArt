@@ -211,69 +211,178 @@ terrazzo polychrome et thermoformez vos sous-verres ou vide-poches
             </div>
         </div>
     </section>
-    <section id="makers" class="reserver-place-cont">
-        <p id="reserve-p-un">RÉSERVATION IMMÉDIATE</p>
-        <p class="makers">
-            Réservez votre place
-d'atelier
-        </p>
-        <p class="para-reserver">
-            Validez votre créneau en direct. Aucun paiement débité
-immédiatement : notre coopérative artisanale confirme chaque
-disponibilité sous 2 heures ouvrées.
-        </p>
-        <div class="cards-makers">
-            <div class="card-make">
-                <div class="etoile-div reservation-icon">
-                    <img src="./assets/icons/Icon (21).png" alt="icon">
-                </div>
-                <div class="etoile-foot">
+<!-- ZONE DE RÉSERVATION UNIFIÉE -->
+    <div class="reservation-unified-wrapper">
+        <section id="makers" class="reserver-place-cont">
+            <p id="reserve-p-un">RÉSERVATION IMMÉDIATE</p>
+            <p class="makers">Réservez votre place d'atelier</p>
+            <p class="para-reserver">
+                Validez votre créneau en direct. Aucun paiement débité immédiatement : notre coopérative artisanale confirme chaque disponibilité sous 2 heures ouvrées.
+            </p>
+            <div class="cards-makers">
+                <div class="card-make">
+                    <div class="etoile-div reservation-icon">
+                        <img src="./assets/icons/Icon (21).png" alt="">
+                    </div>
+                    <div class="etoile-foot">
                         <p class="ant-p1">Garantie & Sécurité Atelier</p>
+                    </div>
+                    <p class="etoile-para">
+                        Équipements de protection individuels aux normes (lunettes, gants, masques filtrants) fournis gracieusement.
+                    </p>
                 </div>
-                <p class="etoile-para">
-                    Équipements de protection individuels aux normes (lunettes,
-gants, masques filtrants) fournis gracieusement.
-                </p>
-            </div>
-            <div class="card-make">
-                <div class="etoile-div reservation-icon">
-                    <img src="./assets/icons/Icon (22).png" alt="icon">
-                </div>
-                <div class="etoile-foot">
+                <div class="card-make">
+                    <div class="etoile-div reservation-icon">
+                        <img src="./assets/icons/Icon (22).png" alt="">
+                    </div>
+                    <div class="etoile-foot">
                         <p class="ant-p1">Accessibilité Universelle</p>
+                    </div>
+                    <p class="etoile-para">
+                        Tous nos ateliers sont de plain-pied, adaptés aux personnes à mobilité réduite ou neurodivergentes sur demande.
+                    </p>
                 </div>
-                <p class="etoile-para">
-                    Tous nos ateliers sont de plain-pied, adaptés aux personnes à
-mobilité réduite ou neurodivergentes sur demande.
-                </p>
-                
-            </div>
-            <div class="card-make">
-                <div class="etoile-div reservation-icon">
-                    <img src="./assets/icons/Icon (23).png" alt="icon">
-                </div>
-                <div class="etoile-foot">
+                <div class="card-make">
+                    <div class="etoile-div reservation-icon">
+                        <img src="./assets/icons/Icon (23).png" alt="">
+                    </div>
+                    <div class="etoile-foot">
                         <p class="ant-p1">Flexibilité & Report</p>
+                    </div>
+                    <p class="etoile-para">
+                        Report sans frais jusqu'à 48 heures avant la session, ou bon cadeau transférable à un proche.
+                    </p>
                 </div>
-                <p class="etoile-para">
-                    Report sans frais jusqu'à 48 heures avant la session, ou bon
-cadeau transférable à un proche.
-                </p>
-            </div>
-            <div class="card-make">
-                <div class="etoile-div reservation-icon">
-                    <img src="./assets/icons/Icon (24).png" alt="icon">
-                </div>
-                <div class="etoile-foot">
+                <div class="card-make card-manufacture">
+                    <div class="etoile-div reservation-icon">
+                        <img src="./assets/icons/Icon (24).png" alt="">
+                    </div>
+                    <div class="etoile-foot">
                         <p class="ant-p1">La Manufacture EcoArt</p>
+                    </div>
+                    <p class="etoile-para">
+                        12 rue de la Fonderie, 75011 Paris
+                    </p>
+                    <p class="plan-acces">Plan d'accès</p>
                 </div>
-                <p class="etoile-para">
-                    12 rue de la Fonderie, 75011 Paris
-                </p>
-                <p class="plan-acces">Plan d'accès</p>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="booking-section">
+            <div class="booking-form-wrapper">
+                <form class="reservation-form">
+                    <!-- 1. Atelier sélectionné -->
+                    <div class="form-group form-group-atelier">
+                        <label for="atelier" class="form-label">
+                            1. Atelier sélectionné <span class="required">*</span>
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="atelier" name="atelier" class="form-control" required>
+                                <option value="" disabled selected>-- Sélectionnez une thématique d'atelier --</option>
+                                <option value="menuiserie">Atelier Menuiserie : Table basse ou Étagère</option>
+                                <option value="verrerie">Atelier Verrerie & Luminaire Upcyclé</option>
+                                <option value="textile">Atelier Couture & Revalorisation Textile</option>
+                                <option value="plastique">Atelier Fusion Plastique & Design Terrazzo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 2. Date souhaitée -->
+                    <div class="form-group form-group-date">
+                        <label for="date" class="form-label">
+                            2. Date souhaitée <span class="required">*</span>
+                        </label>
+                        <input type="text" id="date" name="date" class="form-control" value="10/14/2025" placeholder="JJ/MM/AAAA" required>
+                    </div>
+
+                    <!-- Créneau horaire -->
+                    <div class="form-group form-group-creneau">
+                        <label for="creneau" class="form-label">
+                            Créneau horaire <span class="required">*</span>
+                        </label>
+                        <div class="select-wrapper">
+                            <select id="creneau" name="creneau" class="form-control" required>
+                                <option value="apres-midi" selected>Après-midi (14h00 - 17h30)</option>
+                                <option value="matin">Matin (09h30 - 13h00)</option>
+                                <option value="soiree">Soirée (18h30 - 21h00)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 3. Nombre de participants -->
+                    <div class="form-group form-group-participants">
+                        <label class="form-label">
+                            3. Nombre de participants <span class="required">*</span>
+                        </label>
+                        <div class="stepper-control">
+                            <button type="button" class="btn-stepper" aria-label="Diminuer">-</button>
+                            <span id="participant-count" class="stepper-value">1</span>
+                            <button type="button" class="btn-stepper" aria-label="Augmenter">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Niveau d'expérience -->
+                    <div class="form-group form-group-niveau">
+                        <label for="niveau" class="form-label">Niveau d'expérience</label>
+                        <div class="select-wrapper">
+                            <select id="niveau" name="niveau" class="form-control">
+                                <option value="debutant" selected>Grand débutant (première fois)</option>
+                                <option value="intermediaire">Intermédiaire</option>
+                                <option value="avance">Avancé</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 4. Coordonnées de confirmation -->
+                    <div class="form-group form-group-coords">
+                        <label class="form-label">4. Vos coordonnées de confirmation</label>
+                        <div class="form-row-dual">
+                            <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom *" required>
+                            <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom *" required>
+                        </div>
+                        <div class="form-row-dual form-row-dual-contact">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Adresse e-mail *" required>
+                            <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="Téléphone portable *" required>
+                        </div>
+                    </div>
+
+                    <!-- Besoins spécifiques -->
+                    <div class="form-group form-group-besoins">
+                        <label for="besoins" class="form-label">
+                            Besoins spécifiques & accessibilité (PMR, allergies, accompagnateur...)
+                        </label>
+                        <textarea id="besoins" name="besoins" class="form-control textarea-control" rows="3" placeholder="Précisez tout besoin spécifique pour préparer au mieux votre accueil en manufacture..."></textarea>
+                    </div>
+
+                    <!-- Checkbox de validation -->
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="acceptance" name="acceptance" required>
+                        <span class="custom-checkbox"></span>
+                        <span class="checkbox-text">
+                            J'accepte le règlement intérieur d'atelier et la charte de sécurité des machines outils partagées.
+                        </span>
+                    </label>
+
+                    <!-- Estimation Totale & CTA -->
+                    <div class="estimation-summary-card">
+                        <div class="estimation-left">
+                            <p class="summary-label">ESTIMATION TOTALE</p>
+                            <div class="price-display">
+                                <span class="price-amount">110 €</span>
+                                <span class="price-tax">TTC</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit-booking">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="9 12 12 15 16 10"></polyline>
+                            </svg>
+                            <span>Confirmer ma pré-réservation</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
     
 </body>
 </html>
