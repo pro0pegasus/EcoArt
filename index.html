@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoArt</title>
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="nav" >
-            <a href="/" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./assets/images/Logo EcoArt.png" alt="EcoArt, retour à l'accueil">
             </a>
 
@@ -23,11 +29,11 @@
             </label>
 
             <ul class="items">
-                <li><a class="item" href="/">Accueil</a></li>
-                <li><a class="item" href="/catalogue">Catalogue</a></li>
-                <li><a class="item" href="/ateliers">Ateliers & Services</a></li>
-                <li><a class="item" href="/artisans">Nos Artisans</a></li>
-                <li><a class="item" href="/contact">Impact & Contact</a></li>
+                <li><a class="item" href="index.html">Accueil</a></li>
+                <li><a class="item" href="produits.html">Catalogue</a></li>
+                <li><a class="item" href="services.html">Ateliers &amp; Services</a></li>
+                <li><a class="item" href="artisans.html">Nos Artisans</a></li>
+                <li><a class="item" href="contact.html">Impact &amp; Contact</a></li>
             </ul>
         </nav>
         <section class="header-section">
@@ -61,10 +67,10 @@
         </div>
         <section class="container-button">
             <div class="button-head">
-            <button class="explorer">Explorer le catalogue</button>
+            <button class="explorer" type="button" onclick="location.href='produits.html'">Explorer le catalogue</button>
             </div>
             <div class="button-head">
-                <button class="participer"><img src="./assets/icons/cle.png" alt="">Participer à un atelier</button>
+                <button class="participer" type="button" onclick="location.href='services.html'"><img src="./assets/icons/cle.png" alt="">Participer à un atelier</button>
             </div>
         </section>
         <div class="paragraphs-head">
@@ -193,7 +199,7 @@ plateaux ultra-résistants et marbrés.</p>
             <h3 class="article-h">CRÉATIONS RÉVÉLÉES</h3>
             <h2 class="article-titre">Nouveautés &
  Coups de Cœur</h2>
-            <p class="article-p">Consulter toutes les pièces</p>
+            <p class="article-p"><a href="produits.html">Consulter toutes les pièces</a></p>
         </div>
         <div class="cards-container">
             <div class="card1">
@@ -220,7 +226,7 @@ grange bretonne de 1890 et câble textile</p>
                         <p class="price-prix">Prix atelier</p>
                         <p class="taman">145 €</p>
                     </div>
-                    <button class="button-price-card">
+                    <button class="button-price-card" onclick="location.href='produits.html'">
                         <img alt="icon" src="./assets/icons/second1.png">Ajouter
                     </button>
                 </div>
@@ -249,7 +255,7 @@ four électrique alimenté par…</p>
                         <p class="price-prix">Prix atelier</p>
                         <p class="taman">68 €</p>
                     </div>
-                    <button class="button-price-card">
+                    <button class="button-price-card" onclick="location.href='produits.html'">
                         <img alt="icon" src="./assets/icons/second1.png">Ajouter
                     </button>
                 </div>
@@ -278,7 +284,7 @@ collectés par une association sportive…</p>
                         <p class="price-prix">Prix atelier</p>
                         <p class="taman">82 €</p>
                     </div>
-                    <button class="button-price-card">
+                    <button class="button-price-card" onclick="location.href='produits.html'">
                         <img alt="icon" src="./assets/icons/second1.png">Ajouter
                     </button>
                 </div>
@@ -307,7 +313,7 @@ des chutes de sellerie équestre…</p>
                         <p class="price-prix">Prix atelier</p>
                         <p class="taman">115 €</p>
                     </div>
-                    <button class="button-price-card">
+                    <button class="button-price-card" onclick="location.href='produits.html'">
                         <img alt="icon" src="./assets/icons/second1.png">Ajouter
                     </button>
                 </div>
@@ -429,7 +435,7 @@ finitions marbrées. Repartez le jour même avec votre création polie et
                     <p class="at5-division-p">85 €</p>
                     <p class="at5-division-p2">/ participant</p>
                 </div>
-                <button>
+                <button type="button" onclick="location.href='services.html'">
                     <img src="./assets/icons/reserv.png" alt="icon">
                     <p>Réserver mon créneau</p>
                 </button>
@@ -523,16 +529,16 @@ production de masse. »
         <p class="cta-para">Rejoignez notre communauté de plus de 3 500 passionnés de design durable. Explorez des créations numérotées ou privatisez un atelier pour vos équipes.</p>
         <p class="cta-label">MOUVEMENT CIRCULAIRE</p>
         <div class="buttons-cont">
-            <button class="cta-btn1">Découvrir les pièces disponibles</button>
-        <button class="cta-btn2">Nous proposer un gisement matière</button>
+            <button class="cta-btn1" type="button" onclick="location.href='produits.html'">Découvrir les pièces disponibles</button>
+        <button class="cta-btn2" type="button" onclick="location.href='contact.html'">Nous proposer un gisement matière</button>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="brand">
-                <div class="footer-logo">
+                <a href="index.html" class="footer-logo">
                     <img src="assets/images/Logo EcoArt.png" alt="EcoArt, créativité pour un monde durable">
-                </div>
+                </a>
                 <div class="index-eco">
                     <p>Plateforme d'artisanat circulaire valorisant
                         les rebuts nobles. Conception numérique
@@ -551,23 +557,27 @@ production de masse. »
             <div class="filiere-circulaire">
                 <h2>Filière Circulaire</h2>
                 <ul>
-                    <li>Bois de réemploi &amp; chêne sauvé</li>
-                    <li>Verre recyclé au four solaire</li>
-                    <li>Textiles surcyclés d'ateliers</li>
-                    <li>Métaux ferreux reconditionnés</li>
-                    <li>Charte zéro déchet d'atelier</li>
+                    <li><a  href="produits.html">Bois de réemploi &amp; chêne sauvé</a></li>
+                    <li><a  href="produits.html">Verre recyclé au four solaire</a></li>
+                    <li><a  href="produits.html">Textiles surcyclés d'ateliers</a></li>
+                    <li><a  href="produits.html">Métaux ferreux reconditionnés</a></li>
+                    <li><a  href="contact.html">Charte zéro déchet d'atelier</a></li>
                 </ul>
             </div>
             <div class="labels-certifications">
                 <h2>Labels &amp; Certifications</h2>
                 <ul class="labels">
                     <li class="label-card">
-                        <strong>Label Upcycling Certifié UE</strong>
-                        <span>Norme traçabilité matière brute à 100%</span>
+                        <a class="byad" href="contact.html">
+                            <strong>Label Upcycling Certifié UE</strong>
+                            <span>Norme traçabilité matière brute à 100%</span>
+                        </a>
                     </li>
                     <li class="label-card">
-                        <strong>Garantie Artisans d'Art</strong>
-                        <span>Transmission et fabrication locale</span>
+                        <a class="byad" href="artisans.html">
+                            <strong>Garantie Artisans d'Art</strong>
+                            <span>Transmission et fabrication locale</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -587,12 +597,12 @@ production de masse. »
                 <div class="credits-info">
                     <small>© 2025 EcoArt (NextLine client). Tous droits réservés.</small>
                     <small class="A">Hébergement vert basse consommation</small>
-                    <small class="A">Tél : +33 (0)1 89 45 20 10</small>
+                    <small class="A"><a href="tel:+33189452010">Tél : +33 (0)1 89 45 20 10</a></small>
                 </div>
                 <ul class="credits-links">
-                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a  href="#">Mentions Légales</a></li>
                     <li><a href="#">Accessibilité : Conforme RGAA</a></li>
-                    <li><a href="#">Charte Éco-conception</a></li>
+                    <li><a  href="#">Charte Éco-conception</a></li>
                 </ul>
             </div>
         </div>
