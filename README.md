@@ -6,16 +6,16 @@ développement du site web responsive en CSS Pur avec (Grid, Flexbox, Variables 
 ## 🛠️ Stack technologique
 
 * **HTML5 :** Architecture sémantique.
-* **CSS3 :** Système de mise en page 
-* **Déploiement :** Vercel
+* **CSS3 :** Système de mise en page.
+* **Déploiement :** Vercel.
 
 ## 🗺️ Architecture de l'information (Plan du site)
 
 * **🏠 Accueil (`./index.html`) :** Présente le projet EcoArt, les nouveautés et les valeurs de l'entreprise.
 * **🛋️ Page Catalogue (`./about.html`) :** Montre la liste des produits recyclés (en bois, tissu, verre, plastique).
 * **🛠️ Page Services (`./services.html`) :** Présente les ateliers de bricolage et propose un formulaire de réservation.
-* **👨‍🎨 Page Artisans (`artisans.html`) :** Présente les personnes qui fabriquent les objets.
-* **📊 Page Impact & Contact (`impact.html` / `contact.html`) :** Montre les chiffres écologiques (ex: kilos de déchets recyclés).
+* **👨‍🎨 Page Artisans (`./artisans.html`) :** Présente les personnes qui fabriquent les objets.
+* **📊 Page Impact & Contact (`./contact.html`) :** Montre les chiffres écologiques (ex: kilos de déchets recyclés).
 
 ## 🚀 Lancement en local
 
@@ -24,34 +24,30 @@ développement du site web responsive en CSS Pur avec (Grid, Flexbox, Variables 
 3. Ouvrez `index.html` directement dans un navigateur web, ou utilisez l'extension Live Server dans VS Code pour visualiser les mises à jour en temps réel.
 
 ## 🔗 Resources & liens
-* **Website liens :** [EcoArt](https://ecoart-alpha.vercel.app/).
-* **Presentation :** [EcoArt Presentation](https://canva.link/ucn5d8swqa1ql5f).
-* **Planification :** [Github Project](https://github.com/users/pro0pegasus/projects/7).
-* **Maquette :** [Figma](https://www.figma.com/design/8P9nNut6RYGFcu60xenAq9/EcoArt?node-id=120-1206). 
-* **Prototype :** [Figma](https://www.figma.com/proto/8P9nNut6RYGFcu60xenAq9/EcoArt?node-id=120-1206&p=f&t=K384B3ay3yoL6MLt-0&scaling=min-zoom&content-scaling=fixed&page-id=120%3A1206). 
+* **Website liens :** [EcoArt](https://ecoart-alpha.vercel.app/)
+* **Presentation :** [EcoArt Presentation](https://canva.link/ucn5d8swqa1ql5f)
+* **Planification :** [Github Project](https://github.com/users/pro0pegasus/projects/7)
+* **Maquette :** [Figma](https://www.figma.com/design/8P9nNut6RYGFcu60xenAq9/EcoArt?node-id=120-1206)
+* **Prototype :** [Figma](https://www.figma.com/proto/8P9nNut6RYGFcu60xenAq9/EcoArt?node-id=120-1206&p=f&t=K384B3ay3yoL6MLt-0&scaling=min-zoom&content-scaling=fixed&page-id=120%3A1206)
 
 
 ## 🏗️ Structure
 
 ```
 EcoArt/
-│
-├── index.html                 
-├── README.md                 
-├── artisans.html/             
-├── produits.html/
-├── contact.html/
-├── services.html/
-├── css
-│    ├─── styles.css/                
-│    ├─── variables.css
-│    └─── responsive.css         
-│
-├── assets
-│   ├─── icons
-│   └─── images                    
-│            
-└──                  
+├── index.html
+├── produits.html
+├── services.html
+├── artisans.html
+├── impact.html
+├── css/
+│ ├── style.css
+│ ├── variables.css
+│ └── responsive.css
+├── assets/
+│ ├── images/
+│ └── icons/
+└── README.md                                
 ````
 ## Q & A
 
