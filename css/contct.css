@@ -1,0 +1,19 @@
+body, nav, #plus, #Evitement, #Filiere, #Social, #u1, #v2, #u3, #v4, #Left-Column, #ox1, #ox2, #ox3, #ox4, #ox5, #ox6, #ox7 {
+    background-color: #F2FCF4;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.Live-Calculation, .Metric-1, .Metric-2, .Metric-3, .Metric-4, .Material-Autenticity, .Certification-Card, #Reva, .Practical-Info {
+    background-color: #335238;
+}
+
+#v1, #IcM1, #u2, #IcM2, #v3, #IcM3, #u4, #IcM4 {
+    background-color: #FFE2D6;
+}
