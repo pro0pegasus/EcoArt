@@ -4,15 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoArt</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -33,10 +24,10 @@
 
             <ul class="items">
                 <li><a class="item" href="/">Accueil</a></li>
-                <li><a class="item" href="/catalogue">Catalogue</a></li>
-                <li><a class="item" href="/ateliers">Ateliers & Services</a></li>
-                <li><a class="item" href="/artisans">Nos Artisans</a></li>
-                <li><a class="item" href="/contact">Impact & Contact</a></li>
+                <li><a class="item" href="/produits.html">Catalogue</a></li>
+                <li><a class="item" href="/services.html">Ateliers & Services</a></li>
+                <li><a class="item" href="/artisans.html">Nos Artisans</a></li>
+                <li><a class="item" href="/contact.html">Impact & Contact</a></li>
             </ul>
         </nav>
         <section class="header-section  second-responsive-header">
@@ -52,11 +43,11 @@ d'art singulière façonnée par vos mains..</p>
         </div>
         <div class="filiere-parts">
             <div class="part1">FILIERES :</div>
-            <div class="part2">Tous les Ateliers (4)</div>
-            <div class="part3">Menuiserie & Bois</div>
-            <div class="part3">Verrerie d'art</div>
-            <div class="part3">Textile & Teinture</div>
-            <div class="part3">Plastique Terrazzo</div>
+            <a class="part2" href="#ateliers">Tous les Ateliers (4)</a>
+            <a class="part3" href="#atelier-menuiserie">Menuiserie & Bois</a>
+            <a class="part3" href="#atelier-verrerie">Verrerie d'art</a>
+            <a class="part3" href="#atelier-textile">Textile & Teinture</a>
+            <a class="part3" href="#atelier-plastique">Plastique Terrazzo</a>
         </div>
     </section>
     </header>
@@ -67,8 +58,8 @@ d'art singulière façonnée par vos mains..</p>
             <div class="text-atelier3">
                 <p>Ateliers animés par des maîtres artisans diplômés en éco-conception.</p>
             </div>
-            <div class="container-days-card-new">
-            <div class="card1">
+            <div class="container-days-card-new" id="ateliers">
+            <div class="card1" id="atelier-menuiserie">
                 <div>
                     <img class="card-image second-cards" src="./assets/images/yassine1.png" alt="">
                 </div>
@@ -101,11 +92,11 @@ aux huiles naturelles sur d'anciennes poutres parisiennes déclassées.</p>
                         <p class="price-prix"><img src="./assets/icons/orage.png" alt=""> coton & douille CE</p>
                     </div>
                     <button class="button-price-card test-autre">
-                        110 €
+                        Sélectionner
                     </button>
                 </div>
             </div>
-            <div class="card1">
+            <div class="card1" id="atelier-verrerie">
                 <div>
                     <img class="card-image second-cards" src="./assets/images/yassine2.png" alt="">
                 </div>
@@ -138,11 +129,11 @@ contemporaine.</p>
                         <p class="price-prix"><img src="./assets/icons/orage.png" alt="">Cordon coton & douille CE</p>
                     </div>
                     <button class="button-price-card test-autre">
-                        85 €
+                        Sélectionner
                     </button>
                 </div>
             </div>
-            <div class="card1">
+            <div class="card1" id="atelier-textile">
                 <div>
                     <img class="card-image second-cards" src="./assets/images/yassine3.png" alt="">
                 </div>
@@ -176,11 +167,11 @@ résistant.</p>
                         <p class="price-prix"><img src="./assets/icons/Icon (20).png" alt="">Machines & mercerie inclus</p>
                     </div>
                     <button class="button-price-card test-autre">
-                        75 €
+                        Sélectionner
                     </button>
                 </div>
             </div>
-            <div class="card1">
+            <div class="card1" id="atelier-plastique">
                 <div>
                     <img class="card-image second-cards" src="./assets/images/yassine4.png" alt="">
                 </div>
@@ -214,7 +205,7 @@ terrazzo polychrome et thermoformez vos sous-verres ou vide-poches
                         <p class="price-prix"><img src="./assets/icons/Container (4).png" alt=""> Set de 4 pièces réalisé</p>
                     </div>
                     <button class="button-price-card test-autre">
-                        65 €
+                        Sélectionner
                     </button>
                 </div>
             </div>
@@ -392,6 +383,80 @@ terrazzo polychrome et thermoformez vos sous-verres ou vide-poches
                 </form>
             </div>
         </section>
-    
+    </div>
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/Logo EcoArt.png" alt="EcoArt, créativité pour un monde durable">
+                </a>
+                <div class="index-eco">
+                    <p>Plateforme d'artisanat circulaire valorisant
+                        les rebuts nobles. Conception numérique
+                        sobre, traçabilité certifiée et réduction de
+                        l'empreinte carbone matériel.</p>
+                    <div class="tag">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.56252 14L3.42189 11.8667L1.2607 11.3333L1.47081 8.86667L0 7L1.47081 5.13333L1.2607 2.66667L3.42189 2.13333L4.56252 0L6.60365 0.966667L8.64478 0L9.78541 2.13333L11.9466 2.66667L11.7365 5.13333L13.2073 7L11.7365 8.86667L11.9466 11.3333L9.78541 11.8667L8.64478 14L6.60365 13.0333L4.56252 14ZM5.0728 12.3L6.60365 11.5667L8.16451 12.3L9.00498 10.7L10.6559 10.2667L10.5058 8.4L11.6164 7L10.5058 5.56667L10.6559 3.7L9.00498 3.3L8.13449 1.7L6.60365 2.43333L5.04279 1.7L4.20232 3.3L2.55141 3.7L2.70149 5.56667L1.59088 7L2.70149 8.4L2.55141 10.3L4.20232 10.7L5.0728 12.3ZM5.9733 9.36667L9.36517 5.6L8.52471 4.63333L5.9733 7.46667L4.68259 6.06667L3.84212 7L5.9733 9.36667Z"
+                                fill="#ECF6EE" />
+                        </svg>
+                        <span class="text">Index Éco-Index : A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="filiere-circulaire">
+                <h2>Filière Circulaire</h2>
+                <ul>
+                    <li><a  href="produits.html">Bois de réemploi &amp; chêne sauvé</a></li>
+                    <li><a  href="produits.html">Verre recyclé au four solaire</a></li>
+                    <li><a  href="produits.html">Textiles surcyclés d'ateliers</a></li>
+                    <li><a  href="produits.html">Métaux ferreux reconditionnés</a></li>
+                    <li><a  href="contact.html">Charte zéro déchet d'atelier</a></li>
+                </ul>
+            </div>
+            <div class="labels-certifications">
+                <h2>Labels &amp; Certifications</h2>
+                <ul class="labels">
+                    <li class="label-card">
+                        <a class="byad" href="contact.html">
+                            <strong>Label Upcycling Certifié UE</strong>
+                            <span>Norme traçabilité matière brute à 100%</span>
+                        </a>
+                    </li>
+                    <li class="label-card">
+                        <a class="byad" href="artisans.html">
+                            <strong>Garantie Artisans d'Art</strong>
+                            <span>Transmission et fabrication locale</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter Sobre</h2>
+                <p>Une seule édition mensuelle, sans scripts
+                    lourds ni pistage publicitaire.</p>
+                <form action="#">
+                    <input type="email" id="email" name="email" placeholder="votre.email@domaine.fr"
+                        aria-label="Votre adresse e-mail" required>
+                    <button type="submit" class="btn">S'inscrire</button>
+                </form>
+                <p class="newsletter-note">Désinscription en 1 clic. Données hébergées
+                    en France.</p>
+            </div>
+            <div class="credits">
+                <div class="credits-info">
+                    <small>© 2025 EcoArt (NextLine client). Tous droits réservés.</small>
+                    <small class="A">Hébergement vert basse consommation</small>
+                    <small class="A"><a href="tel:+33189452010">Tél : +33 (0)1 89 45 20 10</a></small>
+                </div>
+                <ul class="credits-links">
+                    <li><a  href="#">Mentions Légales</a></li>
+                    <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                    <li><a  href="#">Charte Éco-conception</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
