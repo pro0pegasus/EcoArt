@@ -1,4 +1,4 @@
-# Nom du projet : Élan Fitness
+# Nom du projet : EcoArt
 
 EcoArt est un projet d'intégration web complet de 5 pages à réaliser en équipe. 
 développement du site web responsive en CSS Pur avec (Grid, Flexbox, Variables CSS, Mobile-First).
