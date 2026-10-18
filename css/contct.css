@@ -1,10 +1,4 @@
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body{
-    background-color: #F2FCF4;
-}
-nav, #plus, #Evitement, #Filiere, #Social, #u1, #v2, #u3, #v4 {
+body, nav, #plus, #Evitement, #Filiere, #Social, #u1, #v2, #u3, #v4, #Left-Column, #ox1, #ox2, #ox3, #ox4, #ox5, #ox6, #ox7 {
     background-color: #F2FCF4;
 }
 
@@ -16,7 +10,7 @@ nav, #plus, #Evitement, #Filiere, #Social, #u1, #v2, #u3, #v4 {
     padding: 24px;
 }
 
-.Live-Calculation, .Metric-1, .Metric-2, .Metric-3, .Metric-4 {
+.Live-Calculation, .Metric-1, .Metric-2, .Metric-3, .Metric-4, .Material-Autenticity, .Certification-Card, #Reva, .Practical-Info {
     background-color: #335238;
 }
 
