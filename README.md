@@ -49,6 +49,7 @@ EcoArt/
 │ └── icons/
 └── README.md                                
 ````
+
 ## Q & A
 
 1 : À quoi sert le fichier responsive.css ?
